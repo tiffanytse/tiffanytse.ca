@@ -4,9 +4,13 @@
         <p class="gamma">Send me an <a href="mailto:hey@tiffanytse.ca">email</a> or find me on {% if site.footer-links.twitter %}<a href="https://www.twitter.com/{{ site.footer-links.twitter }}">twitter</a>,{% endif %}
         {% if site.footer-links.linkedin %}<a href="https://www.linkedin.com/in/{{ site.footer-links.linkedin }}">linkedin</a>,{% endif %}
         {% if site.footer-links.dribbble %}<a href="https://dribbble.com/{{ site.footer-links.dribbble }}">dribbble</a>, and {% endif %}
-        {% if site.footer-links.github %}<a href="https://github.com/{{ site.footer-links.github }}">github</i></a>{% endif %}
+        {% if site.footer-links.github %}<a href="https://github.com/{{ site.footer-links.github }}">github</a>.{% endif %}
         </p>
-        <a class="button light">Find out more about me  <i class="i-right-open"></i></a>
+        {% if page.class == "about" %}
+        <a href="{{ site.baseurl }}/#case-studies" class="button light">Check out my recent work  <i class="i-right-open"></i></a>
+        {% else %}
+        <a href="about/" class="button light">Find out more about me  <i class="i-right-open"></i></a>
+        {% endif %}
       </div>
 
       <div class="footer__light">
