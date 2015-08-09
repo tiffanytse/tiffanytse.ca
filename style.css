@@ -303,9 +303,8 @@ img {
  */
 /* line 5, scss/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", "Futura PT", Helvetica, sans-serif;
   color: #222222;
-  font-weight: 600;
   line-height: 1.7;
   margin: 1em 0 15px;
   padding: 0;
@@ -317,86 +316,86 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* line 19, scss/_typography.scss */
+/* line 18, scss/_typography.scss */
 h1, .alpha {
   font-weight: 400;
   font-size: 32px;
 }
-/* line 22, scss/_typography.scss */
+/* line 21, scss/_typography.scss */
 h1 a, .alpha a {
   color: inherit;
 }
 
-/* line 27, scss/_typography.scss */
+/* line 26, scss/_typography.scss */
 h2, .beta {
   font-weight: 400;
   font-size: 24px;
 }
 
-/* line 32, scss/_typography.scss */
+/* line 31, scss/_typography.scss */
 h3, .gamma {
   font-family: "Cardo", Georgia, serif;
 }
 
-/* line 36, scss/_typography.scss */
+/* line 35, scss/_typography.scss */
 h4 {
   font-size: 18px;
   color: #666666;
 }
 
-/* line 41, scss/_typography.scss */
+/* line 40, scss/_typography.scss */
 p {
   margin: 15px 0;
 }
 
-/* line 45, scss/_typography.scss */
+/* line 44, scss/_typography.scss */
 a {
   color: #4183c4;
   text-decoration: none;
   cursor: pointer;
 }
-/* line 49, scss/_typography.scss */
+/* line 48, scss/_typography.scss */
 a:hover, a:active {
   color: #4183c4;
 }
 
-/* line 54, scss/_typography.scss */
+/* line 53, scss/_typography.scss */
 ul, ol {
   margin: 15px 0;
   padding-left: 30px;
 }
 
-/* line 59, scss/_typography.scss */
+/* line 58, scss/_typography.scss */
 ul {
   list-style-type: disc;
 }
 
-/* line 63, scss/_typography.scss */
+/* line 62, scss/_typography.scss */
 ol {
   list-style-type: decimal;
 }
 
-/* line 67, scss/_typography.scss */
+/* line 66, scss/_typography.scss */
 ol ul, ul ol, ul ul, ol ol {
   margin: 0;
 }
 
-/* line 71, scss/_typography.scss */
+/* line 70, scss/_typography.scss */
 ul ul, ol ul {
   list-style-type: circle;
 }
 
-/* line 75, scss/_typography.scss */
+/* line 74, scss/_typography.scss */
 em {
   font-style: italic;
 }
 
-/* line 79, scss/_typography.scss */
+/* line 78, scss/_typography.scss */
 strong {
   font-weight: 600;
 }
 
-/* line 84, scss/_typography.scss */
+/* line 83, scss/_typography.scss */
 .t-center {
   text-align: center;
 }
