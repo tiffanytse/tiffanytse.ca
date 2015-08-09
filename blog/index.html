@@ -1,25 +1,32 @@
 ---
 layout: default
+class: blog
 ---
+
 
 <div class="recent-post">
   {% for post in site.posts limit:1 %}
     <article class="post">
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
+      <div class="date">
+        {{ post.date | date: "%B %e, %Y" }}
+      </div>
+      <div class="entry">
+        {{ post.excerpt }}
+      </div>
+      <a class="button light" href="{{ site.baseurl }}{{ post.url }}">Read full article</a>
     </article>
   {% endfor %}
 </div>
 
+
 <div class="posts">
-  {% for post in site.posts limit:1 %}
+  {% for post in site.posts offset:1 %}
     <article class="post">
-
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
-        {{ post.content }}
+      <div class="date">
+        {{ post.date | date: "%B %e, %Y" }}
       </div>
     </article>
   {% endfor %}

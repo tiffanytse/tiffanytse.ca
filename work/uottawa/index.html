@@ -8,6 +8,6 @@ next: drupalcamp/
 <h1>The University of Ottawa</h1>
 
 <div class="pager">
-  {% if page.previous %}<a href="/work/{{ page.previous }}">Previous</a>{% endif %}
-  {% if page.next%}<a href="/work/{{ page.next }}">Next</a>{% endif %}
+  {% if page.previous %}<a href="{{ site.baseurl }}/work/{{ page.previous }}">Previous</a>{% endif %}
+  {% if page.next%}<a href="{{ site.baseurl }}/work/{{ page.next }}">Next</a>{% endif %}
 </div>
