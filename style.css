@@ -2,7 +2,8 @@
 /***************/
 /* MEYER RESET */
 /***************/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_reset\.scss}line{font-family:\000035}}
+@import url(http://fonts.googleapis.com/css?family=Cardo:400,700,400italic|Montserrat:400,700|Open+Sans:400,600,700,400italic,600italic);
+/* line 17, scss/_reset.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,51 +22,126 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_reset\.scss}line{font-family:\0000326}}
+/* line 27, scss/_reset.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  display: block; }
+  display: block;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_reset\.scss}line{font-family:\0000330}}
+/* line 30, scss/_reset.scss */
 body {
-  line-height: 1; }
+  line-height: 1;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_reset\.scss}line{font-family:\0000333}}
+/* line 33, scss/_reset.scss */
 ol, ul {
-  list-style: none; }
+  list-style: none;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_reset\.scss}line{font-family:\0000336}}
+/* line 36, scss/_reset.scss */
 blockquote, q {
-  quotes: none; }
+  quotes: none;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_reset\.scss}line{font-family:\0000339}}
+/* line 40, scss/_reset.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
-  content: none; }
+  content: none;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_reset\.scss}line{font-family:\0000344}}
+/* line 44, scss/_reset.scss */
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_reset\.scss}line{font-family:\0000350}}
+/* line 50, scss/_reset.scss */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 /**
  * Variables
  */
+/* line 17, ../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/gem/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/gem/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/gem/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/gem/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/gem/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/gem/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/gem/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/gem/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/gem/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
 @font-face {
   font-family: 'tiffanytse';
   src: url("font/tiffanytse.eot?53330736");
   src: url("font/tiffanytse.eot?53330736#iefix") format("embedded-opentype"), url("font/tiffanytse.woff?53330736") format("woff"), url("font/tiffanytse.ttf?53330736") format("truetype"), url("font/tiffanytse.svg?53330736#tiffanytse") format("svg");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
+
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
 /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
 /*
@@ -76,7 +152,7 @@ table {
   }
 }
 */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_tiffanytse\.scss}line{font-family:\0000322}}
+/* line 22, scss/_tiffanytse.scss */
 [class^="i-"]:before, [class*=" i-"]:before {
   font-family: "tiffanytse";
   font-style: normal;
@@ -102,224 +178,293 @@ table {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* Uncomment for 3D effect */
-  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_tiffanytse\.scss}line{font-family:\0000357}}
+/* line 57, scss/_tiffanytse.scss */
 .i-right-open:before {
-  content: '\e800'; }
+  content: '\e800';
+}
 
 /* '' */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_tiffanytse\.scss}line{font-family:\0000358}}
+/* line 58, scss/_tiffanytse.scss */
 .i-down-open:before {
-  content: '\e801'; }
+  content: '\e801';
+}
 
 /* '' */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_tiffanytse\.scss}line{font-family:\0000359}}
+/* line 59, scss/_tiffanytse.scss */
 .i-menu:before {
-  content: '\e802'; }
+  content: '\e802';
+}
 
 /* '' */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_tiffanytse\.scss}line{font-family:\0000360}}
+/* line 60, scss/_tiffanytse.scss */
 .i-cancel:before {
-  content: '\e803'; }
+  content: '\e803';
+}
 
 /* '' */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_tiffanytse\.scss}line{font-family:\0000361}}
+/* line 61, scss/_tiffanytse.scss */
 .i-logo:before {
-  content: '\e804'; }
+  content: '\e804';
+}
 
 /* '' */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_tiffanytse\.scss}line{font-family:\0000362}}
+/* line 62, scss/_tiffanytse.scss */
 .i-mail:before {
-  content: '\e805'; }
+  content: '\e805';
+}
 
 /* '' */
 /*/
 /* BASE RULES
 /*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_init\.scss}line{font-family:\000035}}
+/* line 5, scss/_init.scss */
 html {
-  font-size: 100%; }
+  font-size: 100%;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_init\.scss}line{font-family:\000039}}
+/* line 9, scss/_init.scss */
 body {
+  font-family: "Open Sans", Helvetica, sans-serif;
   background: white;
-  font: 18px/1.4 Helvetica, Arial, sans-serif;
-  color: #333333; }
+  color: #333333;
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(5%, rgba(0, 0, 0, 0.5)), color-stop(5%, rgba(0, 0, 0, 0)));
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
+  background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
+  background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
+  background-image: linear-gradient(bottom, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
+  -webkit-background-size: 100% 1.5em;
+  -moz-background-size: 100% 1.5em;
+  -o-background-size: 100% 1.5em;
+  background-size: 100% 1.5em;
+  background-position: left top;
+  background-image: -webkit-linear-gradient(bottom, #ff1d8e 5%, rgba(0, 0, 0, 0) 5%);
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_init\.scss}line{font-family:\0000315}}
+/* line 17, scss/_init.scss */
 .container {
   margin: 0 auto;
   max-width: 740px;
   padding: 0 10px;
-  width: 100%; }
+  width: 100%;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_init\.scss}line{font-family:\0000324}}
+/* line 24, scss/_init.scss */
 img {
-  max-width: 100%; }
+  max-width: 100%;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_init\.scss}line{font-family:\0000328}}
+/* line 28, scss/_init.scss */
 .date {
   font-style: italic;
-  color: #666666; }
+  color: #666666;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_init\.scss}line{font-family:\0000334}}
+/* line 35, scss/_init.scss */
+.bg-dark {
+  background-color: #222222;
+  color: white;
+}
+/* line 38, scss/_init.scss */
+.bg-dark h2 {
+  color: white;
+}
+
+/* line 53, scss/_init.scss */
 ::-moz-selection {
   color: black;
-  background: #eeeeee; }
+  background: #eeeeee;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_init\.scss}line{font-family:\0000338}}
+/* line 57, scss/_init.scss */
 ::selection {
   color: black;
-  background: #eeeeee; }
+  background: #eeeeee;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_init\.scss}line{font-family:\0000345}}
+/* line 65, scss/_init.scss */
 .cf:before,
 .cf:after {
   content: " ";
   /* 1 */
   display: table;
-  /* 2 */ }
+  /* 2 */
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_init\.scss}line{font-family:\0000351}}
+/* line 70, scss/_init.scss */
 .cf:after {
-  clear: both; }
+  clear: both;
+}
 
 /**
  * Typography
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_typography\.scss}line{font-family:\000034}}
+/* line 5, scss/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #222222;
   font-weight: 600;
   line-height: 1.7;
   margin: 1em 0 15px;
-  padding: 0; }
-  @media screen and (max-width: 520px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_typography\.scss}line{font-family:\000034}}
-    h1, h2, h3, h4, h5, h6 {
-      line-height: 1.4; } }
+  padding: 0;
+}
+@media screen and (max-width: 520px) {
+  /* line 5, scss/_typography.scss */
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1.4;
+  }
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_typography\.scss}line{font-family:\0000318}}
-h1 {
+/* line 19, scss/_typography.scss */
+h1, .alpha {
   font-weight: 400;
-  font-size: 32px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_typography\.scss}line{font-family:\0000321}}
-  h1 a {
-    color: inherit; }
+  font-size: 32px;
+}
+/* line 22, scss/_typography.scss */
+h1 a, .alpha a {
+  color: inherit;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_typography\.scss}line{font-family:\0000326}}
-h2 {
+/* line 27, scss/_typography.scss */
+h2, .beta {
   font-weight: 400;
-  font-size: 24px; }
+  font-size: 24px;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_typography\.scss}line{font-family:\0000331}}
-h3 {
-  font-size: 18px; }
+/* line 32, scss/_typography.scss */
+h3, .gamma {
+  font-family: "Cardo", Georgia, serif;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_typography\.scss}line{font-family:\0000335}}
+/* line 36, scss/_typography.scss */
 h4 {
   font-size: 18px;
-  color: #666666; }
+  color: #666666;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_typography\.scss}line{font-family:\0000340}}
+/* line 41, scss/_typography.scss */
 p {
-  margin: 15px 0; }
+  margin: 15px 0;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_typography\.scss}line{font-family:\0000344}}
+/* line 45, scss/_typography.scss */
 a {
   color: #4183c4;
   text-decoration: none;
-  cursor: pointer; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_typography\.scss}line{font-family:\0000348}}
-  a:hover, a:active {
-    color: #4183c4; }
+  cursor: pointer;
+}
+/* line 49, scss/_typography.scss */
+a:hover, a:active {
+  color: #4183c4;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_typography\.scss}line{font-family:\0000353}}
+/* line 54, scss/_typography.scss */
 ul, ol {
   margin: 15px 0;
-  padding-left: 30px; }
+  padding-left: 30px;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_typography\.scss}line{font-family:\0000358}}
+/* line 59, scss/_typography.scss */
 ul {
-  list-style-type: disc; }
+  list-style-type: disc;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_typography\.scss}line{font-family:\0000362}}
+/* line 63, scss/_typography.scss */
 ol {
-  list-style-type: decimal; }
+  list-style-type: decimal;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_typography\.scss}line{font-family:\0000366}}
+/* line 67, scss/_typography.scss */
 ol ul, ul ol, ul ul, ol ol {
-  margin: 0; }
+  margin: 0;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_typography\.scss}line{font-family:\0000370}}
+/* line 71, scss/_typography.scss */
 ul ul, ol ul {
-  list-style-type: circle; }
+  list-style-type: circle;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_typography\.scss}line{font-family:\0000374}}
+/* line 75, scss/_typography.scss */
 em {
-  font-style: italic; }
+  font-style: italic;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_typography\.scss}line{font-family:\0000378}}
+/* line 79, scss/_typography.scss */
 strong {
-  font-weight: 600; }
+  font-weight: 600;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_typography\.scss}line{font-family:\0000383}}
+/* line 84, scss/_typography.scss */
 .t-center {
-  text-align: center; }
+  text-align: center;
+}
 
 /**
  * Layout
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_layout\.scss}line{font-family:\000035}}
+/* line 5, scss/_layout.scss */
 .l-left {
-  float: left; }
+  float: left;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_layout\.scss}line{font-family:\000039}}
+/* line 9, scss/_layout.scss */
 .l-right {
-  float: right; }
+  float: right;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_layout\.scss}line{font-family:\0000317}}
+/* line 17, scss/_layout.scss */
 .wrapper-masthead {
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_layout\.scss}line{font-family:\0000321}}
+/* line 21, scss/_layout.scss */
 .masthead {
   padding: 20px 0;
-  border-bottom: 1px solid #eeeeee; }
-  @media screen and (max-width: 520px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_layout\.scss}line{font-family:\0000321}}
-    .masthead {
-      text-align: center; } }
+  border-bottom: 1px solid #eeeeee;
+}
+@media screen and (max-width: 520px) {
+  /* line 21, scss/_layout.scss */
+  .masthead {
+    text-align: center;
+  }
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_layout\.scss}line{font-family:\0000330}}
+/* line 30, scss/_layout.scss */
 .site-avatar {
   float: left;
   width: 70px;
   height: 70px;
-  margin-right: 15px; }
-  @media screen and (max-width: 520px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_layout\.scss}line{font-family:\0000330}}
-    .site-avatar {
-      float: none;
-      display: block;
-      margin: 0 auto; } }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_layout\.scss}line{font-family:\0000342}}
-  .site-avatar img {
-    border-radius: 5px; }
+  margin-right: 15px;
+}
+@media screen and (max-width: 520px) {
+  /* line 30, scss/_layout.scss */
+  .site-avatar {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+}
+/* line 42, scss/_layout.scss */
+.site-avatar img {
+  border-radius: 5px;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_layout\.scss}line{font-family:\0000347}}
+/* line 47, scss/_layout.scss */
 .site-info {
-  float: left; }
-  @media screen and (max-width: 520px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_layout\.scss}line{font-family:\0000347}}
-    .site-info {
-      float: none;
-      display: block;
-      margin: 0 auto; } }
+  float: left;
+}
+@media screen and (max-width: 520px) {
+  /* line 47, scss/_layout.scss */
+  .site-info {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_layout\.scss}line{font-family:\0000357}}
+/* line 57, scss/_layout.scss */
 .site-name {
   margin: 0;
   color: #333333;
@@ -327,436 +472,520 @@ strong {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-size: 28px;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_layout\.scss}line{font-family:\0000367}}
+/* line 67, scss/_layout.scss */
 .site-description {
   margin: -5px 0 0 0;
   color: #666666;
-  font-size: 16px; }
-  @media screen and (max-width: 520px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_layout\.scss}line{font-family:\0000367}}
-    .site-description {
-      margin: 3px 0; } }
+  font-size: 16px;
+}
+@media screen and (max-width: 520px) {
+  /* line 67, scss/_layout.scss */
+  .site-description {
+    margin: 3px 0;
+  }
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_layout\.scss}line{font-family:\0000377}}
+/* line 77, scss/_layout.scss */
 nav {
   float: right;
   margin-top: 23px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 18px; }
-  @media screen and (max-width: 520px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_layout\.scss}line{font-family:\0000377}}
-    nav {
-      float: none;
-      margin-top: 9px;
-      display: block;
-      font-size: 16px; } }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_layout\.scss}line{font-family:\0000390}}
+  font-size: 18px;
+}
+@media screen and (max-width: 520px) {
+  /* line 77, scss/_layout.scss */
+  nav {
+    float: none;
+    margin-top: 9px;
+    display: block;
+    font-size: 16px;
+  }
+}
+/* line 90, scss/_layout.scss */
+nav a {
+  margin-left: 25px;
+  color: #333333;
+  text-align: right;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+@media screen and (max-width: 520px) {
+  /* line 90, scss/_layout.scss */
   nav a {
-    margin-left: 25px;
-    color: #333333;
-    text-align: right;
-    font-weight: 300;
-    letter-spacing: 1px; }
-    @media screen and (max-width: 520px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_layout\.scss}line{font-family:\0000390}}
-      nav a {
-        margin: 0 10px;
-        color: #4183c4; } }
+    margin: 0 10px;
+    color: #4183c4;
+  }
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_layout\.scss}line{font-family:\00003108}}
+/* line 108, scss/_layout.scss */
 .posts > .post {
   padding-bottom: 2em;
-  border-bottom: 1px solid #eeeeee; }
+  border-bottom: 1px solid #eeeeee;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_layout\.scss}line{font-family:\00003113}}
+/* line 113, scss/_layout.scss */
 .posts > .post:last-child {
   padding-bottom: 1em;
-  border-bottom: none; }
+  border-bottom: none;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_layout\.scss}line{font-family:\00003119}}
+/* line 119, scss/_layout.scss */
 .post blockquote {
   margin: 1.8em .8em;
   border-left: 2px solid #666666;
   padding: 0.1em 1em;
   color: #666666;
   font-size: 22px;
-  font-style: italic; }
+  font-style: italic;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_layout\.scss}line{font-family:\00003129}}
+/* line 129, scss/_layout.scss */
 .wrapper-footer {
   margin-top: 50px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
-  background-color: #eeeeee; }
+  background-color: #eeeeee;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_layout\.scss}line{font-family:\00003136}}
+/* line 136, scss/_layout.scss */
 footer {
   padding: 20px 0;
-  text-align: center; }
+  text-align: center;
+}
 
 /***********************/
 /* SYNTAX HIGHLIGHTING */
 /***********************/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\000036}}
+/* line 6, scss/_highlights.scss */
 .highlight {
   background-color: #222222;
   padding: 5px 10px;
-  margin: 20px 0; }
+  margin: 20px 0;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000312}}
+/* line 12, scss/_highlights.scss */
 .highlight pre {
   word-break: break-all;
-  word-wrap: break-word; }
+  word-wrap: break-word;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000318}}
+/* line 18, scss/_highlights.scss */
 code {
   font-family: 'Courier', monospace;
   font-size: 14px;
-  color: #999999; }
+  color: #999999;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000326}}
+/* line 26, scss/_highlights.scss */
 .highlight .c, .highlight .c1 {
-  color: #586e75; }
+  color: #586e75;
+}
 
 /* Comment */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000327}}
+/* line 27, scss/_highlights.scss */
 .highlight .err {
-  color: #93a1a1; }
+  color: #93a1a1;
+}
 
 /* Error */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000328}}
+/* line 28, scss/_highlights.scss */
 .highlight .g {
-  color: #93a1a1; }
+  color: #93a1a1;
+}
 
 /* Generic */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000329}}
+/* line 29, scss/_highlights.scss */
 .highlight .k {
-  color: #859900; }
+  color: #859900;
+}
 
 /* Keyword */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000330}}
+/* line 30, scss/_highlights.scss */
 .highlight .l {
-  color: #93a1a1; }
+  color: #93a1a1;
+}
 
 /* Literal */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000331}}
+/* line 31, scss/_highlights.scss */
 .highlight .n {
-  color: #93a1a1; }
+  color: #93a1a1;
+}
 
 /* Name */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000332}}
+/* line 32, scss/_highlights.scss */
 .highlight .o {
-  color: #859900; }
+  color: #859900;
+}
 
 /* Operator */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000333}}
+/* line 33, scss/_highlights.scss */
 .highlight .x {
-  color: #cb4b16; }
+  color: #cb4b16;
+}
 
 /* Other */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000334}}
+/* line 34, scss/_highlights.scss */
 .highlight .p {
-  color: #93a1a1; }
+  color: #93a1a1;
+}
 
 /* Punctuation */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000335}}
+/* line 35, scss/_highlights.scss */
 .highlight .cm {
-  color: #586e75; }
+  color: #586e75;
+}
 
 /* Comment.Multiline */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000336}}
+/* line 36, scss/_highlights.scss */
 .highlight .cp {
-  color: #859900; }
+  color: #859900;
+}
 
 /* Comment.Preproc */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000337}}
+/* line 37, scss/_highlights.scss */
 .highlight .c1 {
-  color: #586e75; }
+  color: #586e75;
+}
 
 /* Comment.Single */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000338}}
+/* line 38, scss/_highlights.scss */
 .highlight .cs {
-  color: #859900; }
+  color: #859900;
+}
 
 /* Comment.Special */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000339}}
+/* line 39, scss/_highlights.scss */
 .highlight .gd {
-  color: #2aa198; }
+  color: #2aa198;
+}
 
 /* Generic.Deleted */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000340}}
+/* line 40, scss/_highlights.scss */
 .highlight .ge {
   color: #93A1A1;
-  font-style: italic; }
+  font-style: italic;
+}
 
 /* Generic.Emph */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000341}}
+/* line 41, scss/_highlights.scss */
 .highlight .gr {
-  color: #dc322f; }
+  color: #dc322f;
+}
 
 /* Generic.Error */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000342}}
+/* line 42, scss/_highlights.scss */
 .highlight .gh {
-  color: #cb4b16; }
+  color: #cb4b16;
+}
 
 /* Generic.Heading */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000343}}
+/* line 43, scss/_highlights.scss */
 .highlight .gi {
-  color: #859900; }
+  color: #859900;
+}
 
 /* Generic.Inserted */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000344}}
+/* line 44, scss/_highlights.scss */
 .highlight .go {
-  color: #93a1a1; }
+  color: #93a1a1;
+}
 
 /* Generic.Output */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000345}}
+/* line 45, scss/_highlights.scss */
 .highlight .gp {
-  color: #93a1a1; }
+  color: #93a1a1;
+}
 
 /* Generic.Prompt */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000346}}
+/* line 46, scss/_highlights.scss */
 .highlight .gs {
   color: #93A1A1;
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 /* Generic.Strong */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000347}}
+/* line 47, scss/_highlights.scss */
 .highlight .gu {
-  color: #cb4b16; }
+  color: #cb4b16;
+}
 
 /* Generic.Subheading */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000348}}
+/* line 48, scss/_highlights.scss */
 .highlight .gt {
-  color: #93a1a1; }
+  color: #93a1a1;
+}
 
 /* Generic.Traceback */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000349}}
+/* line 49, scss/_highlights.scss */
 .highlight .kc {
-  color: #cb4b16; }
+  color: #cb4b16;
+}
 
 /* Keyword.Constant */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000350}}
+/* line 50, scss/_highlights.scss */
 .highlight .kd {
-  color: #268bd2; }
+  color: #268bd2;
+}
 
 /* Keyword.Declaration */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000351}}
+/* line 51, scss/_highlights.scss */
 .highlight .kn {
-  color: #859900; }
+  color: #859900;
+}
 
 /* Keyword.Namespace */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000352}}
+/* line 52, scss/_highlights.scss */
 .highlight .kp {
-  color: #859900; }
+  color: #859900;
+}
 
 /* Keyword.Pseudo */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000353}}
+/* line 53, scss/_highlights.scss */
 .highlight .kr {
-  color: #268bd2; }
+  color: #268bd2;
+}
 
 /* Keyword.Reserved */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000354}}
+/* line 54, scss/_highlights.scss */
 .highlight .kt {
-  color: #dc322f; }
+  color: #dc322f;
+}
 
 /* Keyword.Type */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000355}}
+/* line 55, scss/_highlights.scss */
 .highlight .ld {
-  color: #93a1a1; }
+  color: #93a1a1;
+}
 
 /* Literal.Date */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000356}}
+/* line 56, scss/_highlights.scss */
 .highlight .m {
-  color: #2aa198; }
+  color: #2aa198;
+}
 
 /* Literal.Number */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000357}}
+/* line 57, scss/_highlights.scss */
 .highlight .s {
-  color: #2aa198; }
+  color: #2aa198;
+}
 
 /* Literal.String */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000358}}
+/* line 58, scss/_highlights.scss */
 .highlight .na {
-  color: #93a1a1; }
+  color: #93a1a1;
+}
 
 /* Name.Attribute */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000359}}
+/* line 59, scss/_highlights.scss */
 .highlight .nb {
-  color: #b58900; }
+  color: #b58900;
+}
 
 /* Name.Builtin */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000360}}
+/* line 60, scss/_highlights.scss */
 .highlight .nc {
-  color: #268bd2; }
+  color: #268bd2;
+}
 
 /* Name.Class */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000361}}
+/* line 61, scss/_highlights.scss */
 .highlight .no {
-  color: #cb4b16; }
+  color: #cb4b16;
+}
 
 /* Name.Constant */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000362}}
+/* line 62, scss/_highlights.scss */
 .highlight .nd {
-  color: #268bd2; }
+  color: #268bd2;
+}
 
 /* Name.Decorator */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000363}}
+/* line 63, scss/_highlights.scss */
 .highlight .ni {
-  color: #cb4b16; }
+  color: #cb4b16;
+}
 
 /* Name.Entity */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000364}}
+/* line 64, scss/_highlights.scss */
 .highlight .ne {
-  color: #cb4b16; }
+  color: #cb4b16;
+}
 
 /* Name.Exception */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000365}}
+/* line 65, scss/_highlights.scss */
 .highlight .nf {
-  color: #268bd2; }
+  color: #268bd2;
+}
 
 /* Name.Function */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000366}}
+/* line 66, scss/_highlights.scss */
 .highlight .nl {
-  color: #93a1a1; }
+  color: #93a1a1;
+}
 
 /* Name.Label */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000367}}
+/* line 67, scss/_highlights.scss */
 .highlight .nn {
-  color: #93a1a1; }
+  color: #93a1a1;
+}
 
 /* Name.Namespace */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000368}}
+/* line 68, scss/_highlights.scss */
 .highlight .nx {
-  color: #555555; }
+  color: #555555;
+}
 
 /* Name.Other */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000369}}
+/* line 69, scss/_highlights.scss */
 .highlight .py {
-  color: #93a1a1; }
+  color: #93a1a1;
+}
 
 /* Name.Property */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000370}}
+/* line 70, scss/_highlights.scss */
 .highlight .nt {
-  color: #268bd2; }
+  color: #268bd2;
+}
 
 /* Name.Tag */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000371}}
+/* line 71, scss/_highlights.scss */
 .highlight .nv {
-  color: #268bd2; }
+  color: #268bd2;
+}
 
 /* Name.Variable */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000372}}
+/* line 72, scss/_highlights.scss */
 .highlight .ow {
-  color: #859900; }
+  color: #859900;
+}
 
 /* Operator.Word */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000373}}
+/* line 73, scss/_highlights.scss */
 .highlight .w {
-  color: #93a1a1; }
+  color: #93a1a1;
+}
 
 /* Text.Whitespace */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000374}}
+/* line 74, scss/_highlights.scss */
 .highlight .mf {
-  color: #2aa198; }
+  color: #2aa198;
+}
 
 /* Literal.Number.Float */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000375}}
+/* line 75, scss/_highlights.scss */
 .highlight .mh {
-  color: #2aa198; }
+  color: #2aa198;
+}
 
 /* Literal.Number.Hex */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000376}}
+/* line 76, scss/_highlights.scss */
 .highlight .mi {
-  color: #2aa198; }
+  color: #2aa198;
+}
 
 /* Literal.Number.Integer */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000377}}
+/* line 77, scss/_highlights.scss */
 .highlight .mo {
-  color: #2aa198; }
+  color: #2aa198;
+}
 
 /* Literal.Number.Oct */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000378}}
+/* line 78, scss/_highlights.scss */
 .highlight .sb {
-  color: #586e75; }
+  color: #586e75;
+}
 
 /* Literal.String.Backtick */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000379}}
+/* line 79, scss/_highlights.scss */
 .highlight .sc {
-  color: #2aa198; }
+  color: #2aa198;
+}
 
 /* Literal.String.Char */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000380}}
+/* line 80, scss/_highlights.scss */
 .highlight .sd {
-  color: #93a1a1; }
+  color: #93a1a1;
+}
 
 /* Literal.String.Doc */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000381}}
+/* line 81, scss/_highlights.scss */
 .highlight .s2 {
-  color: #2aa198; }
+  color: #2aa198;
+}
 
 /* Literal.String.Double */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000382}}
+/* line 82, scss/_highlights.scss */
 .highlight .se {
-  color: #cb4b16; }
+  color: #cb4b16;
+}
 
 /* Literal.String.Escape */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000383}}
+/* line 83, scss/_highlights.scss */
 .highlight .sh {
-  color: #93a1a1; }
+  color: #93a1a1;
+}
 
 /* Literal.String.Heredoc */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000384}}
+/* line 84, scss/_highlights.scss */
 .highlight .si {
-  color: #2aa198; }
+  color: #2aa198;
+}
 
 /* Literal.String.Interpol */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000385}}
+/* line 85, scss/_highlights.scss */
 .highlight .sx {
-  color: #2aa198; }
+  color: #2aa198;
+}
 
 /* Literal.String.Other */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000386}}
+/* line 86, scss/_highlights.scss */
 .highlight .sr {
-  color: #dc322f; }
+  color: #dc322f;
+}
 
 /* Literal.String.Regex */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000387}}
+/* line 87, scss/_highlights.scss */
 .highlight .s1 {
-  color: #2aa198; }
+  color: #2aa198;
+}
 
 /* Literal.String.Single */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000388}}
+/* line 88, scss/_highlights.scss */
 .highlight .ss {
-  color: #2aa198; }
+  color: #2aa198;
+}
 
 /* Literal.String.Symbol */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000389}}
+/* line 89, scss/_highlights.scss */
 .highlight .bp {
-  color: #268bd2; }
+  color: #268bd2;
+}
 
 /* Name.Builtin.Pseudo */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000390}}
+/* line 90, scss/_highlights.scss */
 .highlight .vc {
-  color: #268bd2; }
+  color: #268bd2;
+}
 
 /* Name.Variable.Class */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000391}}
+/* line 91, scss/_highlights.scss */
 .highlight .vg {
-  color: #268bd2; }
+  color: #268bd2;
+}
 
 /* Name.Variable.Global */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000392}}
+/* line 92, scss/_highlights.scss */
 .highlight .vi {
-  color: #268bd2; }
+  color: #268bd2;
+}
 
 /* Name.Variable.Instance */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/User\/Desktop\/tiffanytse\.ca\/scss\/_highlights\.scss}line{font-family:\0000393}}
+/* line 93, scss/_highlights.scss */
 .highlight .il {
-  color: #2aa198; }
+  color: #2aa198;
+}
 
 /* Literal.Number.Integer.Long */
-
-/*# sourceMappingURL=style.css.map */

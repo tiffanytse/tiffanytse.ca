@@ -7,9 +7,11 @@ html {
 }
 
 body {
+  font-family: $primary-font;
 	background: $white;
-  font: 18px/1.4 $helvetica;
   color: $darkGray;
+  @include debug-vertical-alignment();
+  background-image: -webkit-linear-gradient(bottom, #FF1D8E 5%, rgba(0, 0, 0, 0) 5%);
 }
 
 .container {
@@ -19,8 +21,6 @@ body {
   width: 100%;
 }
 
-
-
 img {
   max-width: 100%;
 }
@@ -29,6 +29,25 @@ img {
   font-style: italic;
   color: $gray;
 }
+
+// Background Colors
+
+.bg-dark{
+  background-color: $darkerGray;
+  color: $white;
+  h2{
+    color: $white;
+  }
+}
+
+
+
+
+
+
+
+
+
 
 // Specify the color of the selection
 ::-moz-selection {

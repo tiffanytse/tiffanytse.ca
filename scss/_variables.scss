@@ -2,7 +2,6 @@
  * Variables
  */
 
-
 // Colors
 $blue: #4183C4; 
 
@@ -14,10 +13,19 @@ $gray: #666;
 $lightGray: #eee;
 $white: #fff;
 
-// Font stacks
-$helvetica: Helvetica, Arial, sans-serif;
-$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$georgia: Georgia, serif;
+// Font stacks (Cardo and Montserrat)
+@import url(http://fonts.googleapis.com/css?family=Cardo:400,700,400italic|Montserrat:400,700|Open+Sans:400,600,700,400italic,600italic);
+
+$helvetica:       Helvetica, Arial, sans-serif;
+$helveticaNeue:   "Helvetica Neue", Helvetica, Arial, sans-serif;
+$georgia:         Georgia, serif;
+$cardo:           'Cardo', Georgia, serif;
+$montserrat:      'Montserrat', "Futura PT", Helvetica, sans-serif;
+$open-sans:       'Open Sans', Helvetica, sans-serif;
+
+// Site fonts
+$primary-font: $open-sans;
+
 
 // Mobile breakpoints
 @mixin mobile {
@@ -25,3 +33,17 @@ $georgia: Georgia, serif;
     @content;
   }
 }
+
+// Compass Imports
+
+@import "compass/reset";
+@import "compass/utilities";
+@import "compass/css3";
+@import "compass/typography/vertical_rhythm";
+
+
+$base-font-size: 16px;
+$base-line-height: 24px;
+$rhythm-unit: em;
+$default-rhythm-border-style: 1px red;
+
