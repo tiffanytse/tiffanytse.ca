@@ -2,12 +2,13 @@
 layout: default
 title: Work &middot; Dropfort
 next: uottawa/
-previous: green-party-ontario/
+previous: gpo/
+class: dropfort
 ---
 
 <h1>Dropfort</h1>
 
 <div class="pager">
-  {% if page.previous %}<a href="/work/{{ page.previous }}">Previous</a>{% endif %}
-  {% if page.next%}<a href="/work/{{ page.next }}">Next</a>{% endif %}
+  {% if page.previous %}<a href="{{ site.baseurl }}/work/{{ page.previous }}">Previous</a>{% endif %}
+  {% if page.next%}<a href="{{ site.baseurl }}/work/{{ page.next }}">Next</a>{% endif %}
 </div>

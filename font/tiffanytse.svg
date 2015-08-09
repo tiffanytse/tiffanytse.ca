@@ -1,0 +1,17 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2015 by original authors @ fontello.com</metadata>
+<defs>
+<font id="tiffanytse" horiz-adv-x="1000" >
+<font-face font-family="tiffanytse" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="right-open" unicode="&#xe800;" d="m618 361l-414-415q-11-10-25-10t-26 10l-92 93q-11 11-11 25t11 25l296 297-296 296q-11 11-11 25t11 25l92 93q11 10 26 10t25-10l414-414q10-11 10-25t-10-25z" horiz-adv-x="714.3" />
+<glyph glyph-name="down-open" unicode="&#xe801;" d="m939 399l-414-413q-10-11-25-11t-25 11l-414 413q-11 11-11 26t11 25l92 92q11 11 26 11t25-11l296-296 296 296q11 11 25 11t26-11l92-92q11-11 11-25t-11-26z" horiz-adv-x="1000" />
+<glyph glyph-name="menu" unicode="&#xe802;" d="m68 62q0-30 21-51t51-21h793q30 0 51 21t21 51-21 51-51 21h-793q-29 0-51-21t-21-51z m0 288q0-30 21-51t51-21h793q30 0 51 21t21 51-21 51-51 21h-793q-29 0-51-21t-21-51z m0 288q0-30 21-51t51-21h793q30 0 51 21t21 51-21 51-51 21h-793q-29 0-51-21t-21-51z" horiz-adv-x="1073.2" />
+<glyph glyph-name="cancel" unicode="&#xe803;" d="m0 90q0 36 26 62l195 195-195 196q-26 25-26 61t26 61 61 25 61-25l196-196 195 196q25 25 61 25t61-25 25-61-25-61l-195-196 195-195q25-26 25-62t-25-61q-25-25-61-25t-61 25l-195 195-196-195q-25-25-61-25t-61 25q-26 26-26 61z" horiz-adv-x="686.5" />
+<glyph glyph-name="logo" unicode="&#xe804;" d="m984 350c0-267-217-484-484-484s-484 217-484 484 217 484 484 484 484-217 484-484z m-395 104l31 74-304 126-30-75 109-45-128-311 86-35 127 311 109-45z m-178-208l-31-74 304-126 31 75-109 45 127 311-86 35-127-311-109 45z" horiz-adv-x="1000" />
+<glyph glyph-name="mail" unicode="&#xe805;" d="m929 11v428q-18-20-39-37-149-114-238-188-28-24-46-38t-48-27-57-13h-2q-26 0-57 13t-48 27-46 38q-88 74-238 188-21 17-39 37v-428q0-8 6-13t12-5h822q7 0 12 5t6 13z m0 586v14t-1 7-1 7-3 5-5 4-8 2h-822q-7 0-12-6t-6-12q0-94 82-159 108-85 224-177 4-2 20-16t25-21 25-18 28-15 24-5h2q11 0 24 5t28 15 25 18 25 21 20 16q116 92 224 177 30 24 56 65t26 73z m71 21v-607q0-37-26-63t-63-27h-822q-36 0-63 27t-26 63v607q0 37 26 63t63 26h822q37 0 63-26t26-63z" horiz-adv-x="1000" />
+</font>
+</defs>
+</svg>
