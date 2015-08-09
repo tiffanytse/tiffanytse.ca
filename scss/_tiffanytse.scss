@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'tiffanytse';
-  src: url('font/tiffanytse.eot?77610272');
-  src: url('font/tiffanytse.eot?77610272#iefix') format('embedded-opentype'),
-       url('font/tiffanytse.woff?77610272') format('woff'),
-       url('font/tiffanytse.ttf?77610272') format('truetype'),
-       url('font/tiffanytse.svg?77610272#tiffanytse') format('svg');
+  src: url('font/tiffanytse.eot?53330736');
+  src: url('font/tiffanytse.eot?53330736#iefix') format('embedded-opentype'),
+       url('font/tiffanytse.woff?53330736') format('woff'),
+       url('font/tiffanytse.ttf?53330736') format('truetype'),
+       url('font/tiffanytse.svg?53330736#tiffanytse') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -14,7 +14,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'tiffanytse';
-    src: url('../font/tiffanytse.svg?77610272#tiffanytse') format('svg');
+    src: url('../font/tiffanytse.svg?53330736#tiffanytse') format('svg');
   }
 }
 */
@@ -59,3 +59,4 @@
 .i-menu:before { content: '\e802'; } /* '' */
 .i-cancel:before { content: '\e803'; } /* '' */
 .i-logo:before { content: '\e804'; } /* '' */
+.i-mail:before { content: '\e805'; } /* '' */
