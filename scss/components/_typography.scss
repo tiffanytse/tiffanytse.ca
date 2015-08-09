@@ -5,10 +5,7 @@
 h1, h2, h3, h4, h5, h6 {
   font-family: $montserrat;
   color: $darkerGray;
-  
-  line-height: 1.7;
-  margin: 1em 0 15px;
-  padding: 0;
+  line-height: 1.2; 
 
   @include mobile {
     line-height: 1.4;
@@ -17,19 +14,24 @@ h1, h2, h3, h4, h5, h6 {
   
 h1, .alpha{  
   font-weight: 400;
-  font-size: 32px;
+  @include rem-fallback(font-size, 2.5); // 40px
   a {
     color: inherit; 
   }
 }
 
-h2, .beta{  
-  font-weight: 400;
-  font-size: 24px;
+h2, .beta{
+  @include rem-fallback(font-size, 2.5);
+}
+
+.article h2{
+  @include rem-fallback(font-size, 1.25); // 20px
+  text-transform: uppercase;
 }
 
 h3, .gamma{  
   font-family: $cardo;
+  @include rem-fallback(font-size, 1.375); // 22px 
 }
 
 h4 {  
@@ -42,9 +44,10 @@ p {
 }
 
 a {
-  color: $blue;
+  color: $text-color;
   text-decoration: none;
   cursor: pointer;
+  font-weight: bold; 
   &:hover, &:active {
     color: $blue;
   }
@@ -79,6 +82,9 @@ strong {
   font-weight: 600;
 }
 
+.hide-text{
+  @include hide-text;
+}
 
 .t-center{
   text-align: center;

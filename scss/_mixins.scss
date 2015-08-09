@@ -1,0 +1,151 @@
+// Makes an element visually hidden, but accessible.
+// @see http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+@mixin element-invisible {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
+    clip: rect(1px 1px 1px 1px); // IE6 and IE7 use the wrong syntax.
+  }
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+// Turns off the element-invisible effect.
+@mixin element-invisible-off {
+  position: static !important;
+  clip: auto;
+  height: auto;
+  width: auto;
+  overflow: auto;
+}
+
+
+// Makes an element visually hidden by default, but visible when focused.
+@mixin element-focusable {
+  @include element-invisible;
+
+  &:active,
+  &:focus {
+    @include element-invisible-off;
+  }
+}
+
+
+// Hide text in an element
+@mixin hide-text {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block; // inline elements with this won't hide text unless set to block
+}
+
+@mixin show-text{
+  text-indent: 0;
+  white-space: normal;
+  overflow: visible;
+}
+
+
+// Zero margin and padding
+@mixin zero{
+   margin: 0;
+   padding: 0;
+ }
+
+
+// Fallback for RGBA
+// Usage:
+// @include alpha-attribute('background-color', rgba(black, 0.5), white);
+@mixin alpha-attribute($attribute, $color, $background) {
+  $percent: alpha($color) * 100%;
+  $opaque: opacify($color, 1);
+  $solid-color: mix($opaque, $background, $percent);
+  #{$attribute}: $solid-color;
+  #{$attribute}: $color;
+}
+
+
+// Fallback for REM sizing
+// http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
+@function strip-unit($num) {
+  @return $num / ($num * 0 + 1);
+}
+
+@mixin rem-fallback($property, $values...) {
+  $max: length($values);
+  $pxValues: '';
+  $remValues: '';
+
+  @for $i from 1 through $max {
+    $value: strip-unit(nth($values, $i));
+    $pxValues: #{$pxValues + $value*16}px;
+
+    @if $i < $max {
+      $pxValues: #{$pxValues + " "};
+    }
+  } 
+
+  @for $i from 1 through $max {
+    $value: strip-unit(nth($values, $i));
+    $remValues: #{$remValues + $value}rem;
+
+    @if $i < $max {
+      $remValues: #{$remValues + " "};
+    }
+  } 
+  
+  #{$property}: $pxValues; 
+  #{$property}: $remValues; 
+}
+
+
+// SVG Fallback for BG Image
+// Usage:
+// @include vector-bg-with-fallback(nameofimage);
+$public_path: "../";
+@mixin vector-bg-with-fallback($name) {
+  background-image: url('#{$public_path}images/#{$name}.png');
+  background-image: none, url('#{$public_path}images/#{$name}.svg');
+}
+
+
+// Retina Background Images
+// Usage: 
+// @include background-image-retina($file, $type, $width, $height);
+@mixin background-image-retina($file, $type, $width, $height) {
+  background-image: url('../images/' + $file + '.' + $type);
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
+    & {
+      background-image: url($file + '@2x.' + $type);
+      background-size: $width $height;
+    }
+  }
+}
+
+
+// Border box sizing
+@mixin border-box{
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box;
+}
+
+
+//Anti Aliasing for light colors on dark backgrounds
+ @mixin anti-aliasing{
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+ }
+
+// Easing 
+// Usage: 
+// @include ease(all, 0.2s, ease-in-out);
+@mixin ease($transition-property, $transition-time, $method) {
+    -webkit-transition: $transition-property $transition-time $method;
+    -moz-transition: $transition-property $transition-time $method;
+    -ms-transition: $transition-property $transition-time $method;
+    -o-transition: $transition-property $transition-time $method;
+    transition: $transition-property $transition-time $method;
+}

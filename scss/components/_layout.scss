@@ -1,0 +1,75 @@
+/**
+ * Layout
+ */
+
+.l-left{
+  float: left;
+}
+
+.l-right{
+  float: right;
+}
+
+//
+// .masthead
+//
+
+.wrapper{
+  margin: 0 auto;
+  padding: 0 1em;
+}
+
+
+//
+// .main
+//
+
+.contact{
+  position: relative;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  .button{
+    position: absolute;
+    top: 1em;
+    right: 1em;
+  }
+
+  .i-mail{
+    &:before{
+      @include zero;
+    }
+  }
+}
+
+.posts > .post {
+  padding-bottom: 2em;
+  border-bottom: 1px solid $lightGray;
+}
+
+.posts > .post:last-child {
+  padding-bottom: 1em;
+  border-bottom: none;
+}
+
+.post { 
+  blockquote {
+    margin: 1.8em .8em;
+    border-left: 2px solid $gray;
+    padding: 0.1em 1em;
+    color: $gray;
+    font-size: 22px;
+    font-style: italic;
+  }
+}
+
+.wrapper-footer {
+  margin-top: 50px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  background-color: $lightGray;
+}
+
+footer {
+  padding: 20px 0;
+  text-align: center;
+}

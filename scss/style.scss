@@ -4,13 +4,20 @@
 
 // Base
 @import "reset";
+
+
 @import "variables";
 @import "tiffanytse"; // custom icon font
-@import "init";
-@import "typography";
+@import "mixins";
+
+@import "components/typography";
 
 // Layout
-@import "layout";
+@import "components/layout";
+
+@import "components/misc";
+@import "components/buttons";
+
 
 // Modules 
 
@@ -19,5 +26,5 @@
 // Theme
 
 // Libraries
-@import "_highlights";
+@import "components/highlights";
 

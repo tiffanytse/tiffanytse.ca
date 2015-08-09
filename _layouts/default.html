@@ -14,16 +14,18 @@
 
   <body class="page-{{ page.class }}">
     <div class="contact bg-dark">
+      <div class="wrapper">
       {% include contact-info.html %}
+      </div>
     </div>
 
     <header class="header clearfix">
-      <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+      <a href="{{ site.baseurl }}/"></a>
 
       <div class=".header__site-info">
-        {% if page.url == "/index.html" %}<a href="{{ site.baseurl }}/"><h1>{{ site.name }}</h1></a>{% endif %}
+        {% if page.url == "/index.html" %}<i class="i-logo"></i><a class=".header__site-name" href="{{ site.baseurl }}/"><h1>{{ site.name }}</h1></a>{% endif %}
         <!-- Only make an H1 on the home page, otherwise let the page name be the h1 -->
-        {% if page.url != "/index.html" %}<a href="{{ site.baseurl }}/">{{ site.name }}</a>{% endif %}
+        {% if page.url != "/index.html" %}<i class="i-logo"></i><a class=".header__site-name" href="{{ site.baseurl }}/">{{ site.name }}</a>{% endif %}
       </div>
 
       <nav>
