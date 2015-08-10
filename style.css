@@ -177,25 +177,29 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.2;
   }
 }
+/* line 13, scss/components/_typography.scss */
+h1.light, h2.light, h3.light, h4.light, h5.light, h6.light {
+  color: white;
+}
 
-/* line 15, scss/components/_typography.scss */
+/* line 18, scss/components/_typography.scss */
 h1, .alpha {
   font-weight: 400;
   font-size: 40px;
   font-size: 2.5rem;
 }
-/* line 18, scss/components/_typography.scss */
+/* line 21, scss/components/_typography.scss */
 h1 a, .alpha a {
   color: inherit;
 }
 
-/* line 23, scss/components/_typography.scss */
+/* line 26, scss/components/_typography.scss */
 h2, .beta {
   font-size: 40px;
   font-size: 2.5rem;
 }
 
-/* line 28, scss/components/_typography.scss */
+/* line 31, scss/components/_typography.scss */
 article h2,
 .case-studies {
   font-size: 20px;
@@ -204,21 +208,21 @@ article h2,
   font-weight: bold;
 }
 
-/* line 34, scss/components/_typography.scss */
+/* line 37, scss/components/_typography.scss */
 h3, .gamma {
   font-family: "Cardo", Georgia, serif;
   font-size: 20px;
   font-size: 1.25rem;
 }
 
-/* line 39, scss/components/_typography.scss */
+/* line 42, scss/components/_typography.scss */
 h4, .delta {
   font-size: 20px;
   font-size: 1.25rem;
   color: #444444;
 }
 
-/* line 44, scss/components/_typography.scss */
+/* line 47, scss/components/_typography.scss */
 h5, .epsilon {
   font-size: 16px;
   font-size: 1rem;
@@ -226,61 +230,71 @@ h5, .epsilon {
   color: #444444;
 }
 
-/* line 50, scss/components/_typography.scss */
+/* line 53, scss/components/_typography.scss */
 p {
   margin: .5em 0 0;
   line-height: 1.6;
 }
+/* line 56, scss/components/_typography.scss */
+p.light {
+  color: white;
+}
 
-/* line 55, scss/components/_typography.scss */
+/* line 62, scss/components/_typography.scss */
+.main-content p {
+  margin: 1em 0 0;
+  line-height: 1.9;
+}
+
+/* line 68, scss/components/_typography.scss */
 a {
   color: #444444;
   text-decoration: none;
   cursor: pointer;
   font-weight: bold;
 }
-/* line 60, scss/components/_typography.scss */
+/* line 73, scss/components/_typography.scss */
 a:hover, a:active {
   color: #eeeeee;
 }
 
-/* line 65, scss/components/_typography.scss */
+/* line 78, scss/components/_typography.scss */
 ul, ol {
   margin: 15px 0;
   padding-left: 30px;
 }
 
-/* line 70, scss/components/_typography.scss */
+/* line 83, scss/components/_typography.scss */
 ul {
   list-style-type: disc;
 }
 
-/* line 74, scss/components/_typography.scss */
+/* line 87, scss/components/_typography.scss */
 ol {
   list-style-type: decimal;
 }
 
-/* line 78, scss/components/_typography.scss */
+/* line 91, scss/components/_typography.scss */
 ol ul, ul ol, ul ul, ol ol {
   margin: 0;
 }
 
-/* line 82, scss/components/_typography.scss */
+/* line 95, scss/components/_typography.scss */
 ul ul, ol ul {
   list-style-type: circle;
 }
 
-/* line 86, scss/components/_typography.scss */
+/* line 99, scss/components/_typography.scss */
 em {
   font-style: italic;
 }
 
-/* line 90, scss/components/_typography.scss */
+/* line 103, scss/components/_typography.scss */
 strong {
   font-weight: 600;
 }
 
-/* line 94, scss/components/_typography.scss */
+/* line 107, scss/components/_typography.scss */
 .hide-text {
   text-indent: 100%;
   white-space: nowrap;
@@ -288,12 +302,12 @@ strong {
   display: block;
 }
 
-/* line 98, scss/components/_typography.scss */
+/* line 111, scss/components/_typography.scss */
 .t-center {
   text-align: center;
 }
 
-/* line 102, scss/components/_typography.scss */
+/* line 115, scss/components/_typography.scss */
 .t-copyright {
   font-size: 12px;
   font-size: 0.75rem;
@@ -344,26 +358,31 @@ strong {
 
 /* line 31, scss/components/_layout.scss */
 .wrapper {
-  max-width: 600px;
+  max-width: 700px;
   margin: 0 auto;
 }
 
-/* line 39, scss/components/_layout.scss */
+/* line 36, scss/components/_layout.scss */
+.header .wrapper {
+  padding: 0;
+}
+
+/* line 42, scss/components/_layout.scss */
 .main section {
   padding: 4em 0;
 }
-/* line 41, scss/components/_layout.scss */
+/* line 44, scss/components/_layout.scss */
 .main section.intro {
   padding-top: 15.5em;
   margin-top: -10.5em;
 }
 
-/* line 48, scss/components/_layout.scss */
+/* line 51, scss/components/_layout.scss */
 .page-front .gpo {
   position: relative;
   padding-top: 8.5em;
 }
-/* line 51, scss/components/_layout.scss */
+/* line 54, scss/components/_layout.scss */
 .page-front .gpo .case-studies {
   position: absolute;
   top: 0;
@@ -377,57 +396,64 @@ strong {
 /**
  * Layout
  */
-/* line 67, scss/components/_layout.scss */
+/* line 71, scss/components/_layout.scss */
 .l-left {
   float: left;
 }
 
-/* line 71, scss/components/_layout.scss */
+/* line 75, scss/components/_layout.scss */
 .l-right {
   float: right;
 }
 
-/* line 79, scss/components/_layout.scss */
+/* line 83, scss/components/_layout.scss */
 .wrapper {
   margin: 0 auto;
   padding: 0 1.5em;
 }
 
-/* line 89, scss/components/_layout.scss */
+/* line 93, scss/components/_layout.scss */
 .contact {
   position: relative;
   padding-top: 1.5em;
   padding-bottom: 1.5em;
 }
-/* line 93, scss/components/_layout.scss */
+/* line 97, scss/components/_layout.scss */
 .contact h2 {
   padding-right: 1em;
 }
-/* line 96, scss/components/_layout.scss */
+/* line 100, scss/components/_layout.scss */
 .contact .button {
   position: absolute;
   top: 1.5em;
   right: 1.5em;
 }
-/* line 102, scss/components/_layout.scss */
+/* line 106, scss/components/_layout.scss */
 .contact .i-mail:before {
   margin: 0;
   padding: 0;
 }
 
-/* line 108, scss/components/_layout.scss */
+/* line 112, scss/components/_layout.scss */
+.main .main-content {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2em 1.5em 4em;
+}
+
+/* line 118, scss/components/_layout.scss */
 .posts > .post {
   padding-bottom: 2em;
   border-bottom: 1px solid #eeeeee;
 }
 
-/* line 113, scss/components/_layout.scss */
+/* line 123, scss/components/_layout.scss */
 .posts > .post:last-child {
   padding-bottom: 1em;
   border-bottom: none;
 }
 
-/* line 119, scss/components/_layout.scss */
+/* line 129, scss/components/_layout.scss */
 .post blockquote {
   margin: 1.8em .8em;
   border-left: 2px solid #444444;
@@ -437,19 +463,36 @@ strong {
   font-style: italic;
 }
 
-/* line 129, scss/components/_layout.scss */
-.wrapper-footer {
-  margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: #eeeeee;
-}
-
-/* line 136, scss/components/_layout.scss */
+/* line 139, scss/components/_layout.scss */
 footer {
   padding: 3em 0 0;
 }
 
+@media only screen and (min-width: 37.5em) {
+  /* line 144, scss/components/_layout.scss */
+  .header .wrapper {
+    max-width: 1280px;
+    padding: 0 1em;
+  }
+
+  /* line 150, scss/components/_layout.scss */
+  .header__site-info {
+    float: left;
+    width: 8.33333%;
+    margin-left: 0%;
+    margin-right: -8.33333%;
+    text-align: left;
+  }
+
+  /* line 154, scss/components/_layout.scss */
+  .header nav {
+    float: right;
+    width: 66.66667%;
+    margin-right: 0%;
+    margin-left: -66.66667%;
+    text-align: right;
+  }
+}
 /*/
 /* BASE RULES
 /*/
@@ -529,7 +572,13 @@ img {
   text-transform: uppercase;
   margin: .2em;
 }
-/* line 73, scss/components/_misc.scss */
+@media only screen and (min-width: 37.5em) {
+  /* line 68, scss/components/_misc.scss */
+  .header nav li {
+    margin: .2em 1em;
+  }
+}
+/* line 76, scss/components/_misc.scss */
 .header nav a {
   color: white;
   display: block;
@@ -537,17 +586,12 @@ img {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* line 79, scss/components/_misc.scss */
+/* line 82, scss/components/_misc.scss */
 .header nav .contact-btn:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* line 86, scss/components/_misc.scss */
-.header .wrapper {
-  padding: 0;
-}
-
-/* line 90, scss/components/_misc.scss */
+/* line 89, scss/components/_misc.scss */
 .border-thin {
   border: 1px solid #d2d2d2;
   -webkit-border-radius: 3px;
@@ -558,60 +602,60 @@ img {
 }
 
 @media only screen and (min-width: 37.5em) {
-  /* line 97, scss/components/_misc.scss */
+  /* line 96, scss/components/_misc.scss */
   .is-solid.header .site-logo h1, .is-solid.header .site-logo .site-name {
     display: inline-block;
   }
-  /* line 100, scss/components/_misc.scss */
+  /* line 99, scss/components/_misc.scss */
   .is-solid.header .site-logo nav a {
     color: #444444;
   }
-  /* line 102, scss/components/_misc.scss */
+  /* line 101, scss/components/_misc.scss */
   .is-solid.header .site-logo nav a:hover {
     color: #231f20;
   }
 
-  /* line 108, scss/components/_misc.scss */
+  /* line 107, scss/components/_misc.scss */
   .is-solid.header {
     background-color: white;
   }
 }
-/* line 116, scss/components/_misc.scss */
+/* line 115, scss/components/_misc.scss */
 .bg-dark {
   background-color: #222222;
   color: white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* line 120, scss/components/_misc.scss */
+/* line 119, scss/components/_misc.scss */
 .bg-dark h2 {
   color: #f5f5f5;
 }
-/* line 123, scss/components/_misc.scss */
+/* line 122, scss/components/_misc.scss */
 .bg-dark p {
   color: #fff;
 }
-/* line 127, scss/components/_misc.scss */
+/* line 126, scss/components/_misc.scss */
 .bg-dark .content a, .bg-dark.footer p a {
   color: #9a9a9a;
 }
-/* line 130, scss/components/_misc.scss */
+/* line 129, scss/components/_misc.scss */
 .bg-dark .content a:hover, .bg-dark .content a:focus, .bg-dark.footer p a:hover, .bg-dark.footer p a:focus {
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 
-/* line 135, scss/components/_misc.scss */
+/* line 134, scss/components/_misc.scss */
 .contact.bg-dark .content a {
   color: #648dcd;
 }
 
-/* line 141, scss/components/_misc.scss */
+/* line 140, scss/components/_misc.scss */
 i.large {
   font-size: 40px;
   font-size: 2.5rem;
 }
 
-/* line 145, scss/components/_misc.scss */
+/* line 144, scss/components/_misc.scss */
 .i-logo {
   font-size: 56px;
   font-size: 3.5rem;
@@ -623,7 +667,7 @@ i.large {
   margin: 1rem;
   position: relative;
 }
-/* line 154, scss/components/_misc.scss */
+/* line 153, scss/components/_misc.scss */
 .i-logo:before {
   position: absolute;
   top: -10px;
@@ -631,12 +675,12 @@ i.large {
   margin: 0;
 }
 
-/* line 162, scss/components/_misc.scss */
+/* line 161, scss/components/_misc.scss */
 .i-cancel {
   color: white;
 }
 
-/* line 168, scss/components/_misc.scss */
+/* line 167, scss/components/_misc.scss */
 .site-logo:hover .i-logo, .site-logo:hover h1, .site-logo:hover .site-name,
 .site-logo:focus .i-logo,
 .site-logo:focus h1,
@@ -644,83 +688,97 @@ i.large {
   color: #312c2d;
 }
 
-/* line 176, scss/components/_misc.scss */
+/* line 175, scss/components/_misc.scss */
 .main section {
-  color: white;
-}
-/* line 178, scss/components/_misc.scss */
-.main section h2 {
-  color: white;
-}
-
-/* line 184, scss/components/_misc.scss */
-.page-front .main section {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
 }
-/* line 188, scss/components/_misc.scss */
+
+/* line 180, scss/components/_misc.scss */
+.page-front .main section {
+  text-align: center;
+  color: white;
+}
+/* line 183, scss/components/_misc.scss */
+.page-front .main section h2 {
+  color: white;
+}
+/* line 187, scss/components/_misc.scss */
 .page-front .intro {
   background-color: #374760;
 }
-/* line 191, scss/components/_misc.scss */
+/* line 190, scss/components/_misc.scss */
 .page-front .gpo {
   background-color: #3bc161;
 }
-/* line 193, scss/components/_misc.scss */
+/* line 192, scss/components/_misc.scss */
 .page-front .gpo .case-studies {
   background-color: white;
   color: #231f20;
 }
-/* line 198, scss/components/_misc.scss */
+/* line 197, scss/components/_misc.scss */
 .page-front .dropfort {
   background-color: #2e8fe8;
 }
-/* line 201, scss/components/_misc.scss */
+/* line 200, scss/components/_misc.scss */
 .page-front .uottawa {
   background-color: #dd4460;
 }
-/* line 204, scss/components/_misc.scss */
+/* line 203, scss/components/_misc.scss */
 .page-front .drupalcamp {
   background-color: #643d9b;
 }
 
 /* line 212, scss/components/_misc.scss */
+.page-about .intro {
+  background: url("images/about.jpg") center center;
+  background-size: cover;
+  background-position: fixed;
+}
+
+/* line 220, scss/components/_misc.scss */
+.page-blog .intro {
+  background: url("images/about.jpg") center center;
+  background-size: cover;
+  background-position: fixed;
+}
+
+/* line 230, scss/components/_misc.scss */
 .footer .button {
   display: inline-block;
   margin-top: 1.5em;
 }
 
-/* line 217, scss/components/_misc.scss */
+/* line 235, scss/components/_misc.scss */
 .footer__light {
   background-color: #393939;
   margin-top: 4em;
   padding: 1em 0 1.5em;
 }
-/* line 221, scss/components/_misc.scss */
+/* line 239, scss/components/_misc.scss */
 .footer__light span {
   display: block;
   margin-top: 1em;
 }
-/* line 225, scss/components/_misc.scss */
+/* line 243, scss/components/_misc.scss */
 .footer__light .t-copyright {
   float: none;
   text-align: center;
 }
 
-/* line 234, scss/components/_misc.scss */
+/* line 252, scss/components/_misc.scss */
 ::-moz-selection {
   color: #231f20;
   background: #eeeeee;
 }
 
-/* line 238, scss/components/_misc.scss */
+/* line 256, scss/components/_misc.scss */
 ::selection {
   color: #231f20;
   background: #eeeeee;
 }
 
-/* line 246, scss/components/_misc.scss */
+/* line 264, scss/components/_misc.scss */
 .cf:before,
 .cf:after {
   content: " ";
@@ -729,7 +787,7 @@ i.large {
   /* 2 */
 }
 
-/* line 251, scss/components/_misc.scss */
+/* line 269, scss/components/_misc.scss */
 .cf:after {
   clear: both;
 }

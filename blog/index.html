@@ -3,31 +3,41 @@ layout: default
 class: blog
 ---
 
+<section class="section intro">
+  <div class="wrapper">
+    <div class="content t-center">
+      <h1 class="light">Blog</h1>
+      <p class="gamma light">Thoughts, experiments and things that interest me.</p>
+    </div>
+  </div>
+</section>
 
-<div class="recent-post">
-  {% for post in site.posts limit:1 %}
-    <article class="post">
+<section class="main-content">
+  <div class="recent-post">
+    {% for post in site.posts limit:1 %}
+      <article class="post">
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-      <div class="date">
-        {{ post.date | date: "%B %e, %Y" }}
-      </div>
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-      <a class="button light" href="{{ site.baseurl }}{{ post.url }}">Read full article</a>
-    </article>
-  {% endfor %}
-</div>
+        <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+        <div class="date">
+          {{ post.date | date: "%B %e, %Y" }}
+        </div>
+        <div class="entry">
+          {{ post.excerpt }}
+        </div>
+        <a class="button light" href="{{ site.baseurl }}{{ post.url }}">Read full article</a>
+      </article>
+    {% endfor %}
+  </div>
 
 
-<div class="posts">
-  {% for post in site.posts offset:1 %}
-    <article class="post">
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-      <div class="date">
-        {{ post.date | date: "%B %e, %Y" }}
-      </div>
-    </article>
-  {% endfor %}
-</div>
+  <div class="posts">
+    {% for post in site.posts offset:1 %}
+      <article class="post">
+        <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+        <div class="date">
+          {{ post.date | date: "%B %e, %Y" }}
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+</section>

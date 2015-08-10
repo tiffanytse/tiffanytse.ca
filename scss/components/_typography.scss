@@ -10,6 +10,9 @@ h1, h2, h3, h4, h5, h6 {
   @media #{$tablet}{
     line-height: 1.2; 
   }
+  &.light{
+    color: $white;
+  }
 }
   
 h1, .alpha{  
@@ -50,6 +53,16 @@ h5, .epsilon{
 p {
   margin: .5em 0 0;
   line-height: 1.6;
+  &.light{
+    color: $white;
+  }
+}
+
+.main-content{
+  p{
+    margin: 1em 0 0; 
+    line-height: 1.9;
+  }
 }
 
 a {
@@ -103,4 +116,5 @@ strong {
   @include rem-fallback(font-size, .75); //12px
   font-family: $montserrat; 
 }
+
 
