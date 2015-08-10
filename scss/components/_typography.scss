@@ -88,9 +88,10 @@ a {
   text-decoration: none;
   cursor: pointer;
   font-weight: bold; 
-  @include ease(all, 250ms, ease-in-out);
+  @include ease(background, 250ms, ease-in-out);
+  @include ease(color, 250ms, ease-in-out);
   &:hover, &:active {
-    color: $lightGray;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
   }
 }
 

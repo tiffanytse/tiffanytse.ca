@@ -23,6 +23,9 @@ $(document).ready(function() {
       }
       else {
         $('#page').attr('data-state', 'slide-open');
+        $('body').animate({
+          scrollTop: $("#contact-top").offset().top
+        }, 1000);
       }
       e.preventDefault();
     });

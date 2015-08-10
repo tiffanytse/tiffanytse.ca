@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'tiffanytse';
-  src: url('font/tiffanytse.eot?53330736');
-  src: url('font/tiffanytse.eot?53330736#iefix') format('embedded-opentype'),
-       url('font/tiffanytse.woff?53330736') format('woff'),
-       url('font/tiffanytse.ttf?53330736') format('truetype'),
-       url('font/tiffanytse.svg?53330736#tiffanytse') format('svg');
+  src: url('font/tiffanytse.eot?46627485');
+  src: url('font/tiffanytse.eot?46627485#iefix') format('embedded-opentype'),
+       url('font/tiffanytse.woff?46627485') format('woff'),
+       url('font/tiffanytse.ttf?46627485') format('truetype'),
+       url('font/tiffanytse.svg?46627485#tiffanytse') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -14,7 +14,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'tiffanytse';
-    src: url('../font/tiffanytse.svg?53330736#tiffanytse') format('svg');
+    src: url('../font/tiffanytse.svg?46627485#tiffanytse') format('svg');
   }
 }
 */
@@ -60,3 +60,5 @@
 .i-cancel:before { content: '\e803'; } /* '' */
 .i-logo:before { content: '\e804'; } /* '' */
 .i-mail:before { content: '\e805'; } /* '' */
+.i-left-open:before { content: '\e806'; } /* '' */
+.i-download:before { content: '\e807'; } /* '' */

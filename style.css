@@ -71,8 +71,8 @@ table {
  */
 @font-face {
   font-family: 'tiffanytse';
-  src: url("font/tiffanytse.eot?53330736");
-  src: url("font/tiffanytse.eot?53330736#iefix") format("embedded-opentype"), url("font/tiffanytse.woff?53330736") format("woff"), url("font/tiffanytse.ttf?53330736") format("truetype"), url("font/tiffanytse.svg?53330736#tiffanytse") format("svg");
+  src: url("font/tiffanytse.eot?46627485");
+  src: url("font/tiffanytse.eot?46627485#iefix") format("embedded-opentype"), url("font/tiffanytse.woff?46627485") format("woff"), url("font/tiffanytse.ttf?46627485") format("truetype"), url("font/tiffanytse.svg?46627485#tiffanytse") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -83,7 +83,7 @@ table {
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'tiffanytse';
-    src: url('../font/tiffanytse.svg?53330736#tiffanytse') format('svg');
+    src: url('../font/tiffanytse.svg?46627485#tiffanytse') format('svg');
   }
 }
 */
@@ -152,6 +152,18 @@ table {
 }
 
 /* '' */
+/* line 63, scss/_tiffanytse.scss */
+.i-left-open:before {
+  content: '\e806';
+}
+
+/* '' */
+/* line 64, scss/_tiffanytse.scss */
+.i-download:before {
+  content: '\e807';
+}
+
+/* '' */
 /* line 14, scss/_mixins.scss */
 .element-invisible {
   position: absolute !important;
@@ -272,54 +284,59 @@ a {
   text-decoration: none;
   cursor: pointer;
   font-weight: bold;
-  -webkit-transition: all 250ms ease-in-out;
-  -moz-transition: all 250ms ease-in-out;
-  -ms-transition: all 250ms ease-in-out;
-  -o-transition: all 250ms ease-in-out;
-  transition: all 250ms ease-in-out;
+  -webkit-transition: background 250ms ease-in-out;
+  -moz-transition: background 250ms ease-in-out;
+  -ms-transition: background 250ms ease-in-out;
+  -o-transition: background 250ms ease-in-out;
+  transition: background 250ms ease-in-out;
+  -webkit-transition: color 250ms ease-in-out;
+  -moz-transition: color 250ms ease-in-out;
+  -ms-transition: color 250ms ease-in-out;
+  -o-transition: color 250ms ease-in-out;
+  transition: color 250ms ease-in-out;
 }
-/* line 92, scss/components/_typography.scss */
+/* line 93, scss/components/_typography.scss */
 a:hover, a:active {
-  color: #d2d2d2;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-/* line 97, scss/components/_typography.scss */
+/* line 98, scss/components/_typography.scss */
 ul, ol {
   margin: 15px 0;
   padding-left: 30px;
 }
 
-/* line 102, scss/components/_typography.scss */
+/* line 103, scss/components/_typography.scss */
 ul {
   list-style-type: disc;
 }
 
-/* line 106, scss/components/_typography.scss */
+/* line 107, scss/components/_typography.scss */
 ol {
   list-style-type: decimal;
 }
 
-/* line 110, scss/components/_typography.scss */
+/* line 111, scss/components/_typography.scss */
 ol ul, ul ol, ul ul, ol ol {
   margin: 0;
 }
 
-/* line 114, scss/components/_typography.scss */
+/* line 115, scss/components/_typography.scss */
 ul ul, ol ul {
   list-style-type: circle;
 }
 
-/* line 118, scss/components/_typography.scss */
+/* line 119, scss/components/_typography.scss */
 em {
   font-style: italic;
 }
 
-/* line 122, scss/components/_typography.scss */
+/* line 123, scss/components/_typography.scss */
 strong {
   font-weight: 600;
 }
 
-/* line 126, scss/components/_typography.scss */
+/* line 127, scss/components/_typography.scss */
 .hide-text {
   text-indent: 100%;
   white-space: nowrap;
@@ -327,12 +344,12 @@ strong {
   display: block;
 }
 
-/* line 130, scss/components/_typography.scss */
+/* line 131, scss/components/_typography.scss */
 .t-center {
   text-align: center;
 }
 
-/* line 134, scss/components/_typography.scss */
+/* line 135, scss/components/_typography.scss */
 .t-copyright {
   font-size: 12px;
   font-size: 0.75rem;
@@ -411,7 +428,7 @@ strong {
 /* line 54, scss/components/_layout.scss */
 .page-front .gpo {
   position: relative;
-  padding-top: 8.5em;
+  padding-top: 13em;
 }
 /* line 57, scss/components/_layout.scss */
 .page-front .gpo .case-studies {
@@ -424,54 +441,150 @@ strong {
   padding: 1em;
 }
 
+/* line 69, scss/components/_layout.scss */
+.picture {
+  margin-top: 4em;
+}
+
+/* line 73, scss/components/_layout.scss */
+.uottawa .picture {
+  margin-top: 5em;
+}
+
+@media only screen and (min-width: 60em) {
+  /* line 79, scss/components/_layout.scss */
+  .page-front .wrapper {
+    max-width: 1280px;
+  }
+  /* line 83, scss/components/_layout.scss */
+  .page-front .intro .content {
+    float: right;
+    width: 41.66667%;
+    margin-right: 8.33333%;
+    margin-left: -50%;
+    text-align: left;
+  }
+  /* line 86, scss/components/_layout.scss */
+  .page-front .intro .content .mega {
+    text-transform: uppercase;
+    font-size: 70px;
+    font-size: 4.375rem;
+  }
+  /* line 91, scss/components/_layout.scss */
+  .page-front .intro .picture {
+    float: left;
+    width: 41.66667%;
+    margin-left: 8.33333%;
+    margin-right: -50%;
+    position: relative;
+    bottom: -5em;
+  }
+  /* line 99, scss/components/_layout.scss */
+  .page-front .t-left .content {
+    float: left;
+    width: 41.66667%;
+    margin-left: 8.33333%;
+    margin-right: -50%;
+    margin-top: 12em;
+  }
+  /* line 105, scss/components/_layout.scss */
+  .page-front .t-right .content {
+    float: right;
+    width: 41.66667%;
+    margin-right: 8.33333%;
+    margin-left: -50%;
+    margin-top: 4.5em;
+  }
+  /* line 110, scss/components/_layout.scss */
+  .page-front .gpo .picture {
+    float: right;
+    width: 41.66667%;
+    margin-right: 0%;
+    margin-left: -41.66667%;
+    margin-top: -2.5em;
+  }
+  /* line 115, scss/components/_layout.scss */
+  .page-front .dropfort .picture {
+    float: right;
+    width: 100%;
+    margin-right: 41.66667%;
+    margin-left: -141.66667%;
+    margin-top: 4em;
+  }
+  /* line 120, scss/components/_layout.scss */
+  .page-front .uottawa .picture {
+    float: left;
+    width: 83.33333%;
+    margin-left: 41.66667%;
+    margin-right: -125.0%;
+    position: absolute;
+    bottom: -1em;
+  }
+  /* line 126, scss/components/_layout.scss */
+  .page-front .drupalcamp .picture {
+    float: right;
+    width: 100%;
+    margin-right: 25%;
+    margin-left: -125.0%;
+  }
+}
+@media only screen and (min-width: 100em) {
+  /* line 134, scss/components/_layout.scss */
+  .page-front .uottawa .picture {
+    float: left;
+    width: 83.33333%;
+    margin-left: 25%;
+    margin-right: -108.33333%;
+  }
+}
 /**
  * Layout
  */
 @media only screen and (min-width: 37.5em) {
-  /* line 76, scss/components/_layout.scss */
+  /* line 156, scss/components/_layout.scss */
   .l-left {
     float: left;
   }
 
-  /* line 80, scss/components/_layout.scss */
+  /* line 160, scss/components/_layout.scss */
   .l-right {
     float: right;
   }
 }
-/* line 86, scss/components/_layout.scss */
+/* line 166, scss/components/_layout.scss */
 .margin {
   margin: 2em 0;
 }
 
-/* line 94, scss/components/_layout.scss */
+/* line 174, scss/components/_layout.scss */
 .wrapper {
   margin: 0 auto;
   padding: 0 1.5em;
 }
 
-/* line 104, scss/components/_layout.scss */
+/* line 184, scss/components/_layout.scss */
 .contact {
   position: relative;
   padding-top: 1.5em;
   padding-bottom: 1.5em;
 }
-/* line 108, scss/components/_layout.scss */
+/* line 188, scss/components/_layout.scss */
 .contact h2 {
   padding-right: 1em;
 }
-/* line 111, scss/components/_layout.scss */
+/* line 191, scss/components/_layout.scss */
 .contact .button {
   position: absolute;
   top: 1.5em;
   right: 1.5em;
 }
-/* line 117, scss/components/_layout.scss */
+/* line 197, scss/components/_layout.scss */
 .contact .i-mail:before {
   margin: 0;
   padding: 0;
 }
 
-/* line 123, scss/components/_layout.scss */
+/* line 203, scss/components/_layout.scss */
 .main .main-content {
   max-width: 700px;
   margin: 0 auto;
@@ -480,24 +593,24 @@ strong {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 130, scss/components/_layout.scss */
+/* line 210, scss/components/_layout.scss */
 .posts > .post {
   padding-bottom: 2em;
   border-bottom: 1px solid #d2d2d2;
 }
 
-/* line 135, scss/components/_layout.scss */
+/* line 215, scss/components/_layout.scss */
 .posts > .post:first-child {
   border-top: 1px solid #d2d2d2;
 }
 
-/* line 139, scss/components/_layout.scss */
+/* line 219, scss/components/_layout.scss */
 .posts > .post:last-child {
   padding-bottom: 1em;
   border-bottom: none;
 }
 
-/* line 145, scss/components/_layout.scss */
+/* line 225, scss/components/_layout.scss */
 .post blockquote {
   margin: 1.8em .8em;
   border-left: 2px solid #444444;
@@ -507,20 +620,20 @@ strong {
   font-style: italic;
 }
 
-/* line 155, scss/components/_layout.scss */
+/* line 235, scss/components/_layout.scss */
 footer {
   padding: 3em 0 0;
 }
 
 @media only screen and (min-width: 37.5em) {
-  /* line 161, scss/components/_layout.scss */
+  /* line 241, scss/components/_layout.scss */
   .header .wrapper,
   .footer__light .wrapper {
     max-width: 1280px;
     padding: 0 1em;
   }
 
-  /* line 167, scss/components/_layout.scss */
+  /* line 247, scss/components/_layout.scss */
   .header__site-info {
     float: left;
     width: 33.33333%;
@@ -529,7 +642,7 @@ footer {
     text-align: left;
   }
 
-  /* line 171, scss/components/_layout.scss */
+  /* line 251, scss/components/_layout.scss */
   .header nav {
     float: right;
     width: 66.66667%;
@@ -538,22 +651,22 @@ footer {
     text-align: right;
   }
 
-  /* line 177, scss/components/_layout.scss */
+  /* line 257, scss/components/_layout.scss */
   .footer__light .t-copyright.l-left {
     float: left;
     text-align: left;
   }
-  /* line 181, scss/components/_layout.scss */
+  /* line 261, scss/components/_layout.scss */
   .footer__light .t-copyright.l-right {
     float: right;
     text-align: right;
     padding-top: 2.4em;
   }
-  /* line 186, scss/components/_layout.scss */
+  /* line 266, scss/components/_layout.scss */
   .footer__light .t-copyright .site-logo {
     float: left;
   }
-  /* line 189, scss/components/_layout.scss */
+  /* line 269, scss/components/_layout.scss */
   .footer__light .t-copyright span {
     display: inline-block;
     margin-top: 2.4em;
@@ -597,6 +710,8 @@ img {
 
 /* line 38, scss/components/_misc.scss */
 .header {
+  position: relative;
+  z-index: 1000;
   text-align: center;
   padding: 1em 0 1.5em;
   -webkit-transition: background-color 300ms ease-in-out;
@@ -620,16 +735,16 @@ img {
     z-index: 1000;
   }
 }
-/* line 51, scss/components/_misc.scss */
+/* line 53, scss/components/_misc.scss */
 .header .site-logo {
   text-transform: uppercase;
   display: inline-block;
 }
-/* line 54, scss/components/_misc.scss */
+/* line 56, scss/components/_misc.scss */
 .header .site-logo i {
   float: left;
 }
-/* line 58, scss/components/_misc.scss */
+/* line 60, scss/components/_misc.scss */
 .header .site-logo h1,
 .header .site-logo .site-name {
   color: #222222;
@@ -642,30 +757,30 @@ img {
   margin-left: .75em;
   letter-spacing: 1px;
 }
-/* line 70, scss/components/_misc.scss */
+/* line 72, scss/components/_misc.scss */
 .header nav {
   font-family: "Montserrat", "Futura PT", Helvetica, sans-serif;
   margin-top: .75em;
 }
-/* line 73, scss/components/_misc.scss */
+/* line 75, scss/components/_misc.scss */
 .header nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-/* line 77, scss/components/_misc.scss */
+/* line 79, scss/components/_misc.scss */
 .header nav li {
   display: inline-block;
   text-transform: uppercase;
   margin: .2em;
 }
 @media only screen and (min-width: 37.5em) {
-  /* line 77, scss/components/_misc.scss */
+  /* line 79, scss/components/_misc.scss */
   .header nav li {
     margin: .2em 1em;
   }
 }
-/* line 85, scss/components/_misc.scss */
+/* line 87, scss/components/_misc.scss */
 .header nav a {
   color: white;
   display: block;
@@ -673,12 +788,18 @@ img {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* line 91, scss/components/_misc.scss */
-.header nav .contact-btn:hover {
+/* line 93, scss/components/_misc.scss */
+.header nav a:hover, .header nav a:focus {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+/* line 98, scss/components/_misc.scss */
+.header nav .contact-btn:hover,
+.header nav .contact-btn:focus {
+  border-bottom: 1px solid white;
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* line 97, scss/components/_misc.scss */
+/* line 105, scss/components/_misc.scss */
 .border-thin {
   border: 1px solid #d2d2d2;
   -webkit-border-radius: 3px;
@@ -688,47 +809,51 @@ img {
   border-radius: 3px;
 }
 
-/* line 102, scss/components/_misc.scss */
+/* line 110, scss/components/_misc.scss */
 .site-logo {
   opacity: .75;
 }
+/* line 113, scss/components/_misc.scss */
+.site-logo:hover, .site-logo:focus {
+  border-bottom: none;
+}
 
-/* line 108, scss/components/_misc.scss */
+/* line 121, scss/components/_misc.scss */
 .bg-dark {
   background-color: #222222;
   color: white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* line 112, scss/components/_misc.scss */
+/* line 125, scss/components/_misc.scss */
 .bg-dark h2 {
   color: #f5f5f5;
 }
-/* line 115, scss/components/_misc.scss */
+/* line 128, scss/components/_misc.scss */
 .bg-dark p {
   color: #fff;
 }
-/* line 119, scss/components/_misc.scss */
+/* line 132, scss/components/_misc.scss */
 .bg-dark .content a, .bg-dark.footer p a {
   color: #9a9a9a;
 }
-/* line 122, scss/components/_misc.scss */
+/* line 135, scss/components/_misc.scss */
 .bg-dark .content a:hover, .bg-dark .content a:focus, .bg-dark.footer p a:hover, .bg-dark.footer p a:focus {
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 
-/* line 127, scss/components/_misc.scss */
+/* line 140, scss/components/_misc.scss */
 .contact.bg-dark .content a {
   color: #648dcd;
 }
 
-/* line 133, scss/components/_misc.scss */
+/* line 146, scss/components/_misc.scss */
 i.large {
   font-size: 40px;
   font-size: 2.5rem;
 }
 
-/* line 137, scss/components/_misc.scss */
+/* line 150, scss/components/_misc.scss */
 .i-logo {
   font-size: 56px;
   font-size: 3.5rem;
@@ -740,7 +865,7 @@ i.large {
   margin: 1rem;
   position: relative;
 }
-/* line 146, scss/components/_misc.scss */
+/* line 159, scss/components/_misc.scss */
 .i-logo:before {
   position: absolute;
   top: -10px;
@@ -748,12 +873,12 @@ i.large {
   margin: 0;
 }
 
-/* line 154, scss/components/_misc.scss */
+/* line 167, scss/components/_misc.scss */
 .i-cancel {
   color: white;
 }
 
-/* line 160, scss/components/_misc.scss */
+/* line 173, scss/components/_misc.scss */
 .site-logo:hover .i-logo, .site-logo:hover h1, .site-logo:hover .site-name,
 .site-logo:focus .i-logo,
 .site-logo:focus h1,
@@ -761,142 +886,186 @@ i.large {
   color: #312c2d;
 }
 
-/* line 167, scss/components/_misc.scss */
+/* line 180, scss/components/_misc.scss */
 .main section {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 172, scss/components/_misc.scss */
+/* line 185, scss/components/_misc.scss */
 .page-front .main section {
   text-align: center;
+  position: relative;
   color: white;
 }
-/* line 175, scss/components/_misc.scss */
+@media only screen and (min-width: 60em) {
+  /* line 190, scss/components/_misc.scss */
+  .page-front .main section.t-right {
+    text-align: right;
+  }
+  /* line 193, scss/components/_misc.scss */
+  .page-front .main section.t-left {
+    text-align: left;
+  }
+  /* line 196, scss/components/_misc.scss */
+  .page-front .main section .case-studies {
+    text-align: center;
+  }
+}
+/* line 200, scss/components/_misc.scss */
 .page-front .main section h2 {
   color: white;
 }
-/* line 179, scss/components/_misc.scss */
+/* line 204, scss/components/_misc.scss */
 .page-front .intro {
-  background-color: #374760;
+  background: #374760 url("images/intro-angles.png") no-repeat center center;
+  height: 762px;
 }
-/* line 182, scss/components/_misc.scss */
+@media only screen and (min-width: 60em) {
+  /* line 204, scss/components/_misc.scss */
+  .page-front .intro {
+    height: 873px;
+    background-size: 1700px 873px;
+  }
+}
+/* line 212, scss/components/_misc.scss */
 .page-front .gpo {
-  background-color: #3bc161;
+  background: #3bc161 url("images/gpo-angles.png") no-repeat center center;
+  background-size: 1700px;
+  height: 689px;
 }
-/* line 184, scss/components/_misc.scss */
+/* line 217, scss/components/_misc.scss */
 .page-front .gpo .case-studies {
   background-color: white;
   color: #231f20;
 }
-/* line 189, scss/components/_misc.scss */
+/* line 222, scss/components/_misc.scss */
 .page-front .dropfort {
-  background-color: #2e8fe8;
+  background: #2e8fe8 url("images/dropfort-angles.png") no-repeat center center;
+  height: 688px;
+  background-size: 1700px;
 }
-/* line 192, scss/components/_misc.scss */
+/* line 227, scss/components/_misc.scss */
 .page-front .uottawa {
-  background-color: #dd4460;
+  background: #dd4460 url("images/uottawa-angles.png") no-repeat top center;
+  height: 688px;
+  background-size: 1700px;
 }
-/* line 195, scss/components/_misc.scss */
+/* line 232, scss/components/_misc.scss */
 .page-front .drupalcamp {
-  background-color: #643d9b;
+  background: #643d9b url("images/drupalcamp-angles.png") no-repeat bottom center;
+  height: 688px;
+  background-size: 1700px;
 }
 
-/* line 204, scss/components/_misc.scss */
+/* line 243, scss/components/_misc.scss */
 .page-about .intro {
   background: url("images/about.jpg") top center;
   background-attachment: fixed;
 }
 
-/* line 210, scss/components/_misc.scss */
+/* line 249, scss/components/_misc.scss */
 .item-list {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
-/* line 213, scss/components/_misc.scss */
+/* line 252, scss/components/_misc.scss */
 .item-list li {
   border-bottom: 1px solid #d2d2d2;
   padding: 1em 0;
 }
-/* line 216, scss/components/_misc.scss */
+/* line 255, scss/components/_misc.scss */
 .item-list li p {
   margin: 0;
 }
-/* line 219, scss/components/_misc.scss */
+/* line 258, scss/components/_misc.scss */
 .item-list li:last-child {
   border-bottom: 0;
 }
 
-/* line 226, scss/components/_misc.scss */
+/* line 265, scss/components/_misc.scss */
 .page-blog .intro {
   background: url("images/blog.jpg") top center;
   background-attachment: fixed;
 }
 
-/* line 234, scss/components/_misc.scss */
+/* line 273, scss/components/_misc.scss */
 .page-gpo .intro {
-  background-color: #3bc161;
+  background: #3bc161 url("images/gpo-angles.png") no-repeat right center;
+  background-size: cover;
 }
 
-/* line 238, scss/components/_misc.scss */
+/* line 278, scss/components/_misc.scss */
 .page-dropfort .intro {
-  background-color: #2e8fe8;
+  background: #2e8fe8 url("images/dropfort-angles.png") no-repeat center center;
+  background-size: cover;
 }
 
-/* line 242, scss/components/_misc.scss */
+/* line 283, scss/components/_misc.scss */
 .page-uottawa .intro {
-  background-color: #dd4460;
+  background: #dd4460 url("images/uottawa-angles.png") no-repeat top center;
+  background-size: cover;
 }
 
-/* line 246, scss/components/_misc.scss */
+/* line 288, scss/components/_misc.scss */
 .page-drupalcamp .intro {
-  background-color: #643d9b;
+  background: #643d9b url("images/drupalcamp-angles.png") no-repeat top center;
+  background-size: cover;
 }
 
-/* line 250, scss/components/_misc.scss */
+/* line 293, scss/components/_misc.scss */
 .pager {
   padding: 1em;
   max-width: 1280px;
   margin: 0 auto;
 }
 
-/* line 259, scss/components/_misc.scss */
+/* line 300, scss/components/_misc.scss */
+.site-link {
+  color: white;
+}
+/* line 303, scss/components/_misc.scss */
+.site-link:hover, .site-link:focus {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* line 312, scss/components/_misc.scss */
 .footer .button {
   display: inline-block;
   margin-top: 1.5em;
 }
 
-/* line 264, scss/components/_misc.scss */
+/* line 317, scss/components/_misc.scss */
 .footer__light {
   background-color: #393939;
   margin-top: 4em;
   padding: 1em 0 1.5em;
 }
-/* line 268, scss/components/_misc.scss */
+/* line 321, scss/components/_misc.scss */
 .footer__light span {
   display: block;
   margin-top: 1em;
 }
-/* line 272, scss/components/_misc.scss */
+/* line 325, scss/components/_misc.scss */
 .footer__light .t-copyright {
   float: none;
   text-align: center;
 }
 
-/* line 281, scss/components/_misc.scss */
+/* line 334, scss/components/_misc.scss */
 ::-moz-selection {
   color: #231f20;
   background: rgba(0, 0, 0, 0.3);
 }
 
-/* line 285, scss/components/_misc.scss */
+/* line 338, scss/components/_misc.scss */
 ::selection {
   color: #231f20;
   background: rgba(0, 0, 0, 0.3);
 }
 
-/* line 293, scss/components/_misc.scss */
+/* line 346, scss/components/_misc.scss */
 .cf:before, .pager:before,
 .cf:after,
 .pager:after {
@@ -906,7 +1075,7 @@ i.large {
   /* 2 */
 }
 
-/* line 298, scss/components/_misc.scss */
+/* line 351, scss/components/_misc.scss */
 .cf:after, .pager:after {
   clear: both;
 }
@@ -950,8 +1119,12 @@ i.large {
   margin-right: 0;
   margin-left: .5em;
 }
+/* line 31, scss/components/_buttons.scss */
+.button:hover, .button:focus {
+  border-bottom: 2px solid;
+}
 
-/* line 32, scss/components/_buttons.scss */
+/* line 36, scss/components/_buttons.scss */
 .circle {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -959,13 +1132,13 @@ i.large {
   -o-border-radius: 50%;
   border-radius: 50%;
 }
-/* line 35, scss/components/_buttons.scss */
+/* line 39, scss/components/_buttons.scss */
 .circle .light:hover,
 .circle .light:focus {
   background: rgba(255, 255, 255, 0.1);
 }
 
-/* line 41, scss/components/_buttons.scss */
+/* line 45, scss/components/_buttons.scss */
 .main .button,
 .footer .button {
   font-family: "Montserrat", "Futura PT", Helvetica, sans-serif;
@@ -973,18 +1146,37 @@ i.large {
   font-size: 1.125rem;
 }
 
-/* line 46, scss/components/_buttons.scss */
+/* line 50, scss/components/_buttons.scss */
 .main .button {
   margin-top: 1em;
 }
 
-/* line 50, scss/components/_buttons.scss */
+/* line 54, scss/components/_buttons.scss */
 .main .button.circle {
   font-size: 16px;
   font-size: 1rem;
 }
 
-/* line 54, scss/components/_buttons.scss */
+/* line 58, scss/components/_buttons.scss */
+.contact-btn {
+  -webkit-transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  -ms-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+/* line 61, scss/components/_buttons.scss */
+.contact-btn:hover, .contact-btn:focus {
+  border-bottom: 1px solid white;
+}
+
+/* line 68, scss/components/_buttons.scss */
+header.is-solid nav .contact-btn:hover, header.is-solid nav .contact-btn:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #d2d2d2;
+}
+
+/* line 74, scss/components/_buttons.scss */
 .pager .button {
   font-size: 16px;
   font-size: 1rem;
@@ -1083,12 +1275,13 @@ i.large {
   .header.is-solid nav a {
     color: #444444;
   }
-  /* line 70, scss/components/_states.scss */
-  .header.is-solid nav a:hover {
+  /* line 71, scss/components/_states.scss */
+  .header.is-solid nav a:hover, .header.is-solid nav a:focus {
     color: #231f20;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
 
-  /* line 76, scss/components/_states.scss */
+  /* line 78, scss/components/_states.scss */
   .is-solid.header {
     background-color: white;
     -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 0 10px;

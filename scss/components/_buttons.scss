@@ -27,6 +27,10 @@
     margin-right: 0;
     margin-left: .5em;
   }
+  &:hover, 
+  &:focus{
+    border-bottom: 2px solid;
+  }
 }
 
 .circle{
@@ -49,6 +53,22 @@
 
 .main .button.circle{
   @include rem-fallback(font-size, 1); //16px
+}
+
+.contact-btn{
+ @include ease(all, 250ms, ease-in-out);
+ &:hover, 
+ &:focus{
+  border-bottom: 1px solid $white;
+ } 
+}
+
+header.is-solid nav .contact-btn{
+ &:hover, 
+ &:focus{
+  background-color: rgba(0,0,0,0.1);
+  border-bottom: 1px solid #d2d2d2;
+ } 
 }
 
 .pager .button{
