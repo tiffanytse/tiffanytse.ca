@@ -38,7 +38,16 @@ img {
 .header{
   text-align: center;
   padding: 1em 0 1.5em;
-  //background-color: red;
+  @include ease(background-color, 300ms, ease-in-out);
+  @include ease(all, 500ms, ease-in-out); 
+  @media #{$tablet-landscape} {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0; 
+    z-index: 1000;
+  }
+
   .site-logo{
     text-transform: uppercase; 
     display: inline-block;
@@ -85,35 +94,10 @@ img {
   }
 }
 
-
 .border-thin{
   border: 1px solid #d2d2d2;
   @include border-radius(3px);
 }
-
-@media #{$tablet} { 
-  .is-solid.header .site-logo{
-    opacity: 1;
-    h1, .site-name{
-      display: inline-block;
-    }
-    nav a{
-      color: $gray;
-      &:hover{
-        color: $black;
-      }
-    }
-  }
-
-  .is-solid.header{
-    background-color: $white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0; 
-  }
-
-} 
 
 .site-logo{
   opacity: .75;
@@ -180,7 +164,6 @@ i.large{
 
 
 // Home Page Sections
-
 .main section{
   @include anti-aliasing;
 }
@@ -246,6 +229,30 @@ i.large{
   }
 }
 
+// Work
+
+.page-gpo .intro{
+  background-color: $green;
+}
+
+.page-dropfort .intro{
+  background-color: $bright-blue;
+}
+
+.page-uottawa .intro{
+  background-color: $pink;
+}
+
+.page-drupalcamp .intro{
+  background-color: $purple;
+}
+
+.pager{
+  padding: 1em;
+  @extend .cf;
+  max-width: 1280px;
+  margin: 0 auto;
+}
 
 // Footer
 
@@ -273,11 +280,11 @@ i.large{
 // Specify the color of the selection
 ::-moz-selection {
   color: $black;
-  background: $lightGray;
+  @include background(rgba(0,0,0,0.3));
 }
 ::selection {
   color: $black;
-  background: $lightGray;
+  @include background(rgba(0,0,0,0.3));
 }
 
 // Nicolas Gallagher's micro clearfix hack

@@ -6,9 +6,16 @@ previous: gpo/
 class: dropfort
 ---
 
-<h1>Dropfort</h1>
+<section class="section intro">
+  <div class="wrapper">
+    <div class="content t-center">
+      <h1 class="light">Dropfort</h1>
+      <p class="gamma light">Thoughts, experiments and things that interest me.</p>
+    </div>
+  </div>
+</section>
 
 <div class="pager">
-  {% if page.previous %}<a href="{{ site.baseurl }}/work/{{ page.previous }}">Previous</a>{% endif %}
-  {% if page.next%}<a href="{{ site.baseurl }}/work/{{ page.next }}">Next</a>{% endif %}
+  {% if page.previous %}<a class="button dark l-left" href="{{ site.baseurl }}/work/{{ page.previous }}"><i class="i-left-open"></i>Previous </a>{% endif %}
+  {% if page.next%}<a class="button dark l-right" href="{{ site.baseurl }}/work/{{ page.next }}">Next <i class="i-right-open"></i></a>{% endif %}
 </div>

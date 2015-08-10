@@ -11,6 +11,7 @@
   }
   &.dark{
     color: $darkGray;
+    border-color: #acacac;
     @include background(rgba(0,0,0, 0.1));
   }
 
@@ -48,4 +49,9 @@
 
 .main .button.circle{
   @include rem-fallback(font-size, 1); //16px
+}
+
+.pager .button{
+  @include rem-fallback(font-size, 1); //16px
+  margin-top: 0;
 }

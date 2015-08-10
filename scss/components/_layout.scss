@@ -44,6 +44,9 @@ $zen-auto-include-item-base: false;
   &.intro{
     padding-top: 15.5em;
     margin-top: -10.5em;
+    @media #{$tablet-landscape} {
+      padding-top: 22.5em;
+    }
   }
 }
 
@@ -149,19 +152,41 @@ footer {
 }
 
 @media #{$tablet} {
-  .header .wrapper{
+  .header .wrapper, 
+  .footer__light .wrapper{
     max-width: 1280px;
     padding: 0 1em;
     @extend .cf;
   }
 
   .header__site-info{
-    @include zen-grid-item(1, 1);
+    @include zen-grid-item(4, 1);
     text-align: left;
   } 
   .header nav{
     @include zen-grid-item(8, 1, right);
     text-align: right;
   }
+  .footer__light{
+    .t-copyright{
+      &.l-left{
+        float: left;
+        text-align: left;
+      }
+      &.l-right{
+        float: right;
+        text-align: right;
+        padding-top: 2.4em;
+      }
+      .site-logo{
+        float: left;
+      }
+      span{
+        display: inline-block;
+        margin-top: 2.4em;
+        margin-left: 1em;
+      }
+    }
+  } 
 
 }

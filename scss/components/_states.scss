@@ -53,5 +53,31 @@
   }
 
 
+/** 
+ * Header Solid
+ */
+
+@media #{$tablet-landscape} { 
+  .header.is-solid {
+    .site-logo{
+      opacity: 1;
+      h1, .site-name{
+        display: inline-block;
+      }
+    }
+    nav a{
+      color: $gray;
+      &:hover{
+        color: $black;
+      }
+    }
+  }
+
+  .is-solid.header{
+    background-color: $white;
+    @include box-shadow(rgba(0,0,0,0.3) 0 0 10px);
+  }
+} 
+
 
 

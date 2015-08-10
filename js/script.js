@@ -27,4 +27,19 @@ $(document).ready(function() {
       e.preventDefault();
     });
 
+    // Animate main menu
+    var mainTop = 10;
+
+    // on scroll, 
+    $(window).on('scroll',function(){
+
+        // we round here to reduce a little workload
+        stop = Math.round($(window).scrollTop());
+        if (stop > mainTop) {
+            $('.header').addClass('is-solid');
+        } else {
+            $('.header').removeClass('is-solid');
+       }
+    });
+
 });
