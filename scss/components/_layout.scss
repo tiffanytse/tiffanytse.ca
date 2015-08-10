@@ -263,6 +263,17 @@ $zen-auto-include-item-base: false;
   }
 }
 
+#case-studies{
+  position:relative;
+}
+#anchor{
+  position: absolute;
+  top: 0;
+  @media #{$tablet} {
+    top: -107px;
+  }
+}
+
 footer {
   padding: 3em 0 0;
 }

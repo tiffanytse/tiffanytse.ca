@@ -670,19 +670,36 @@ strong {
 }
 
 /* line 266, scss/components/_layout.scss */
+#case-studies {
+  position: relative;
+}
+
+/* line 269, scss/components/_layout.scss */
+#anchor {
+  position: absolute;
+  top: 0;
+}
+@media only screen and (min-width: 37.5em) {
+  /* line 269, scss/components/_layout.scss */
+  #anchor {
+    top: -107px;
+  }
+}
+
+/* line 277, scss/components/_layout.scss */
 footer {
   padding: 3em 0 0;
 }
 
 @media only screen and (min-width: 37.5em) {
-  /* line 272, scss/components/_layout.scss */
+  /* line 283, scss/components/_layout.scss */
   .header .wrapper,
   .footer__light .wrapper {
     max-width: 1280px;
     padding: 0 1em;
   }
 
-  /* line 278, scss/components/_layout.scss */
+  /* line 289, scss/components/_layout.scss */
   .header__site-info {
     float: left;
     width: 33.33333%;
@@ -691,7 +708,7 @@ footer {
     text-align: left;
   }
 
-  /* line 282, scss/components/_layout.scss */
+  /* line 293, scss/components/_layout.scss */
   .header nav {
     float: right;
     width: 66.66667%;
@@ -700,22 +717,22 @@ footer {
     text-align: right;
   }
 
-  /* line 288, scss/components/_layout.scss */
+  /* line 299, scss/components/_layout.scss */
   .footer__light .t-copyright.l-left {
     float: left;
     text-align: left;
   }
-  /* line 292, scss/components/_layout.scss */
+  /* line 303, scss/components/_layout.scss */
   .footer__light .t-copyright.l-right {
     float: right;
     text-align: right;
     padding-top: 2.4em;
   }
-  /* line 297, scss/components/_layout.scss */
+  /* line 308, scss/components/_layout.scss */
   .footer__light .t-copyright .site-logo {
     float: left;
   }
-  /* line 300, scss/components/_layout.scss */
+  /* line 311, scss/components/_layout.scss */
   .footer__light .t-copyright span {
     display: inline-block;
     margin-top: 2.4em;
