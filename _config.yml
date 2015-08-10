@@ -29,7 +29,7 @@ footer-links:
 disqus:
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics:
+google_analytics: UA-37748294-1
 
 # Your website URL 
 # Used for Sitemap.xml and your RSS feed
@@ -55,7 +55,7 @@ version: v1.0.0
 # Set the Sass partials directory, as we're using @imports
 sass:
   sass_dir: sass
-  style: :expanded # You might prefer to minify using :compressed
+  style: :compressed #expanded # You might prefer to minify using 
 
 # Use the following plug-ins
 gems:
@@ -68,3 +68,4 @@ exclude:
     - LICENSE
     - README.md
     - scss/*
+    - config.rb
