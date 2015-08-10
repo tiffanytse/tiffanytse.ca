@@ -13,37 +13,56 @@
   </head>
 
   <body class="page-{{ page.class }}">
-    <div class="contact bg-dark">
-      <div class="wrapper">
-      {% include contact-info.html %}
-      </div>
-    </div>
+    <div id="page" data-state="slide-closed">
+      <div class="sliding-canvas">
+        <section class="contact bg-dark">
+          <div class="wrapper">
+          {% include contact-info.html %}
+          </div>
+        </section>
 
-    <header class="header clearfix">
-      <a href="{{ site.baseurl }}/"></a>
+        <header class="header clearfix">
+          <div class="wrapper">
+            <a href="{{ site.baseurl }}/"></a>
 
-      <div class=".header__site-info">
-        {% if page.url == "/index.html" %}<i class="i-logo"></i><a class=".header__site-name" href="{{ site.baseurl }}/"><h1>{{ site.name }}</h1></a>{% endif %}
-        <!-- Only make an H1 on the home page, otherwise let the page name be the h1 -->
-        {% if page.url != "/index.html" %}<i class="i-logo"></i><a class=".header__site-name" href="{{ site.baseurl }}/">{{ site.name }}</a>{% endif %}
-      </div>
+            <div class="header__site-info">
+              {% if page.url == "/index.html" %}<a class="site-logo" href="{{ site.baseurl }}/"><i class="i-logo"></i><h1>{{ site.name }}</h1></a>{% endif %}
+              <!-- Only make an H1 on the home page, otherwise let the page name be the h1 -->
+              {% if page.url != "/index.html" %}<a class="site-logo" href="{{ site.baseurl }}/"><i class="i-logo"></i><span class="site-name">{{ site.name }}</span></a>{% endif %}
+            </div>
 
-      <nav>
-        <ul>
-          <li><a href="{{ site.baseurl }}/about">About</a></li>
-          <li><a href="{{ site.baseurl }}/blog">Blog</a></li>
-          <li><a href="#">Contact</a></li>
-      </nav>
-    </header>
+            <nav>
+              <ul>
+                <li>
+                  {% if page.class == "about" %}
+                  <a class="active" href="{{ site.baseurl }}/about">About</a>
+                  {% else %}
+                  <a href="{{ site.baseurl }}/about">About</a>
+                  {% endif %}
+                </li>
+                <li>
+                  {% if page.class == "blog" %}
+                  <a class="active" href="{{ site.baseurl }}/blog">Blog</a>
+                  {% else %}
+                  <a href="{{ site.baseurl }}/blog">Blog</a>
+                  {% endif %}
+                </li>
+                <li><a class="border-thin contact-btn" href="#contact-info">Contact</a></li>
+            </nav>
+          </div>
+        </header>
 
 
-    <main id="main" role="main">
-      {{ content }}
-    </main>
+        <main id="main" class="main" role="main">
+          {{ content }}
+        </main>
 
-    <footer class="footer bg-dark">
-      {% include footer-info.html %}
-    </footer>
-    {% include analytics.html %}
+        <footer id="contact-info" class="footer bg-dark">
+          {% include footer-info.html %}
+        </footer>
+        {% include scripts.html %}
+        {% include analytics.html %}
+      </div> <!-- sliding-canvas -->
+    </div> <!-- page -->
   </body>
 </html>

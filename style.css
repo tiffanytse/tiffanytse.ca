@@ -69,71 +69,6 @@ table {
 /**
  * Variables
  */
-/* line 17, ../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/gem/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
-}
-
-/* line 22, ../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/gem/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-html {
-  line-height: 1;
-}
-
-/* line 24, ../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/gem/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-ol, ul {
-  list-style: none;
-}
-
-/* line 26, ../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/gem/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* line 28, ../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/gem/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
-
-/* line 30, ../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/gem/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-q, blockquote {
-  quotes: none;
-}
-/* line 103, ../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/gem/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
-
-/* line 32, ../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/gem/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-a img {
-  border: none;
-}
-
-/* line 116, ../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/gem/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
-  display: block;
-}
-
 @font-face {
   font-family: 'tiffanytse';
   src: url("font/tiffanytse.eot?53330736");
@@ -217,6 +152,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* '' */
+/* line 14, scss/_mixins.scss */
+.element-invisible {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
 /**
  * Typography
  */
@@ -224,12 +169,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", "Futura PT", Helvetica, sans-serif;
   color: #222222;
-  line-height: 1.2;
+  line-height: 1.4;
 }
-@media screen and (max-width: 520px) {
+@media only screen and (min-width: 37.5em) {
   /* line 5, scss/components/_typography.scss */
   h1, h2, h3, h4, h5, h6 {
-    line-height: 1.4;
+    line-height: 1.2;
   }
 }
 
@@ -250,80 +195,92 @@ h2, .beta {
   font-size: 2.5rem;
 }
 
-/* line 27, scss/components/_typography.scss */
-.article h2 {
+/* line 28, scss/components/_typography.scss */
+article h2,
+.case-studies {
   font-size: 20px;
   font-size: 1.25rem;
   text-transform: uppercase;
+  font-weight: bold;
 }
 
-/* line 32, scss/components/_typography.scss */
+/* line 34, scss/components/_typography.scss */
 h3, .gamma {
   font-family: "Cardo", Georgia, serif;
-  font-size: 22px;
-  font-size: 1.375rem;
+  font-size: 20px;
+  font-size: 1.25rem;
 }
 
-/* line 37, scss/components/_typography.scss */
-h4 {
-  font-size: 18px;
-  color: #666666;
+/* line 39, scss/components/_typography.scss */
+h4, .delta {
+  font-size: 20px;
+  font-size: 1.25rem;
+  color: #444444;
 }
 
-/* line 42, scss/components/_typography.scss */
+/* line 44, scss/components/_typography.scss */
+h5, .epsilon {
+  font-size: 16px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #444444;
+}
+
+/* line 50, scss/components/_typography.scss */
 p {
-  margin: 15px 0;
+  margin: .5em 0 0;
+  line-height: 1.6;
 }
 
-/* line 46, scss/components/_typography.scss */
+/* line 55, scss/components/_typography.scss */
 a {
-  color: #333333;
+  color: #444444;
   text-decoration: none;
   cursor: pointer;
   font-weight: bold;
 }
-/* line 51, scss/components/_typography.scss */
+/* line 60, scss/components/_typography.scss */
 a:hover, a:active {
-  color: #4183c4;
+  color: #eeeeee;
 }
 
-/* line 56, scss/components/_typography.scss */
+/* line 65, scss/components/_typography.scss */
 ul, ol {
   margin: 15px 0;
   padding-left: 30px;
 }
 
-/* line 61, scss/components/_typography.scss */
+/* line 70, scss/components/_typography.scss */
 ul {
   list-style-type: disc;
 }
 
-/* line 65, scss/components/_typography.scss */
+/* line 74, scss/components/_typography.scss */
 ol {
   list-style-type: decimal;
 }
 
-/* line 69, scss/components/_typography.scss */
+/* line 78, scss/components/_typography.scss */
 ol ul, ul ol, ul ul, ol ol {
   margin: 0;
 }
 
-/* line 73, scss/components/_typography.scss */
+/* line 82, scss/components/_typography.scss */
 ul ul, ol ul {
   list-style-type: circle;
 }
 
-/* line 77, scss/components/_typography.scss */
+/* line 86, scss/components/_typography.scss */
 em {
   font-style: italic;
 }
 
-/* line 81, scss/components/_typography.scss */
+/* line 90, scss/components/_typography.scss */
 strong {
   font-weight: 600;
 }
 
-/* line 85, scss/components/_typography.scss */
+/* line 94, scss/components/_typography.scss */
 .hide-text {
   text-indent: 100%;
   white-space: nowrap;
@@ -331,71 +288,156 @@ strong {
   display: block;
 }
 
-/* line 89, scss/components/_typography.scss */
+/* line 98, scss/components/_typography.scss */
 .t-center {
   text-align: center;
+}
+
+/* line 102, scss/components/_typography.scss */
+.t-copyright {
+  font-size: 12px;
+  font-size: 0.75rem;
+  font-family: "Montserrat", "Futura PT", Helvetica, sans-serif;
+}
+
+/**
+ * Grid System Declarations
+ */
+/* Apply the shared properties of grid items in a single, efficient ruleset. */
+/* line 19, scss/components/_layout.scss */
+.wrapper {
+  padding-left: 8px;
+  padding-right: 8px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+}
+
+/* Containers for grid items and flow items. */
+/* line 27, scss/components/_layout.scss */
+.header,
+.main,
+.footer {
+  *position: relative;
+  *zoom: 1;
+}
+/* line 46, ../../../../Library/Ruby/Gems/2.0.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+.header:before, .header:after,
+.main:before,
+.main:after,
+.footer:before,
+.footer:after {
+  content: "";
+  display: table;
+}
+/* line 50, ../../../../Library/Ruby/Gems/2.0.0/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+.header:after,
+.main:after,
+.footer:after {
+  clear: both;
+}
+
+/* line 31, scss/components/_layout.scss */
+.wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* line 39, scss/components/_layout.scss */
+.main section {
+  padding: 4em 0;
+}
+/* line 41, scss/components/_layout.scss */
+.main section.intro {
+  padding-top: 15.5em;
+  margin-top: -10.5em;
+}
+
+/* line 48, scss/components/_layout.scss */
+.page-front .gpo {
+  position: relative;
+  padding-top: 8.5em;
+}
+/* line 51, scss/components/_layout.scss */
+.page-front .gpo .case-studies {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: 0;
+  padding: 1em;
 }
 
 /**
  * Layout
  */
-/* line 5, scss/components/_layout.scss */
+/* line 67, scss/components/_layout.scss */
 .l-left {
   float: left;
 }
 
-/* line 9, scss/components/_layout.scss */
+/* line 71, scss/components/_layout.scss */
 .l-right {
   float: right;
 }
 
-/* line 17, scss/components/_layout.scss */
+/* line 79, scss/components/_layout.scss */
 .wrapper {
   margin: 0 auto;
-  padding: 0 1em;
+  padding: 0 1.5em;
 }
 
-/* line 27, scss/components/_layout.scss */
+/* line 89, scss/components/_layout.scss */
 .contact {
   position: relative;
   padding-top: 1.5em;
   padding-bottom: 1.5em;
 }
-/* line 31, scss/components/_layout.scss */
+/* line 93, scss/components/_layout.scss */
+.contact h2 {
+  padding-right: 1em;
+}
+/* line 96, scss/components/_layout.scss */
 .contact .button {
   position: absolute;
-  top: 1em;
-  right: 1em;
+  top: 1.5em;
+  right: 1.5em;
 }
-/* line 38, scss/components/_layout.scss */
+/* line 102, scss/components/_layout.scss */
 .contact .i-mail:before {
   margin: 0;
   padding: 0;
 }
 
-/* line 44, scss/components/_layout.scss */
+/* line 108, scss/components/_layout.scss */
 .posts > .post {
   padding-bottom: 2em;
   border-bottom: 1px solid #eeeeee;
 }
 
-/* line 49, scss/components/_layout.scss */
+/* line 113, scss/components/_layout.scss */
 .posts > .post:last-child {
   padding-bottom: 1em;
   border-bottom: none;
 }
 
-/* line 55, scss/components/_layout.scss */
+/* line 119, scss/components/_layout.scss */
 .post blockquote {
   margin: 1.8em .8em;
-  border-left: 2px solid #666666;
+  border-left: 2px solid #444444;
   padding: 0.1em 1em;
-  color: #666666;
+  color: #444444;
   font-size: 22px;
   font-style: italic;
 }
 
-/* line 65, scss/components/_layout.scss */
+/* line 129, scss/components/_layout.scss */
 .wrapper-footer {
   margin-top: 50px;
   border-top: 1px solid #ddd;
@@ -403,10 +445,9 @@ strong {
   background-color: #eeeeee;
 }
 
-/* line 72, scss/components/_layout.scss */
+/* line 136, scss/components/_layout.scss */
 footer {
-  padding: 20px 0;
-  text-align: center;
+  padding: 3em 0 0;
 }
 
 /*/
@@ -422,7 +463,7 @@ body {
   font-family: "Open Sans", Helvetica, sans-serif;
   line-height: 1.3;
   background: white;
-  color: #333333;
+  color: #393939;
 }
 
 /* line 18, scss/components/_misc.scss */
@@ -438,51 +479,251 @@ img {
   max-width: 100%;
 }
 
-/* line 31, scss/components/_misc.scss */
+/* line 29, scss/components/_misc.scss */
 .date {
   font-style: italic;
-  color: #666666;
+  color: #444444;
 }
 
-/* line 38, scss/components/_misc.scss */
+/* line 37, scss/components/_misc.scss */
+.header {
+  text-align: center;
+  padding: 1em 0 1.5em;
+}
+/* line 41, scss/components/_misc.scss */
+.header .site-logo {
+  text-transform: uppercase;
+  display: inline-block;
+}
+/* line 45, scss/components/_misc.scss */
+.header .site-logo i {
+  float: left;
+}
+/* line 49, scss/components/_misc.scss */
+.header .site-logo h1,
+.header .site-logo .site-name {
+  color: #222222;
+  font-family: "Montserrat", "Futura PT", Helvetica, sans-serif;
+  display: none;
+  font-weight: bold;
+  font-size: 30px;
+  font-size: 1.875rem;
+  margin-top: .6em;
+  margin-left: .75em;
+  letter-spacing: 1px;
+}
+/* line 61, scss/components/_misc.scss */
+.header nav {
+  font-family: "Montserrat", "Futura PT", Helvetica, sans-serif;
+  margin-top: .75em;
+}
+/* line 64, scss/components/_misc.scss */
+.header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 68, scss/components/_misc.scss */
+.header nav li {
+  display: inline-block;
+  text-transform: uppercase;
+  margin: .2em;
+}
+/* line 73, scss/components/_misc.scss */
+.header nav a {
+  color: white;
+  display: block;
+  padding: .5em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* line 78, scss/components/_misc.scss */
+.header nav a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* line 86, scss/components/_misc.scss */
+.header .wrapper {
+  padding: 0;
+}
+
+/* line 90, scss/components/_misc.scss */
+.border-thin {
+  border: 1px solid #d2d2d2;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+
+@media only screen and (min-width: 37.5em) {
+  /* line 97, scss/components/_misc.scss */
+  .is-solid.header .site-logo h1, .is-solid.header .site-logo .site-name {
+    display: inline-block;
+  }
+  /* line 100, scss/components/_misc.scss */
+  .is-solid.header .site-logo nav a {
+    color: #444444;
+  }
+  /* line 102, scss/components/_misc.scss */
+  .is-solid.header .site-logo nav a:hover {
+    color: #231f20;
+  }
+
+  /* line 108, scss/components/_misc.scss */
+  .is-solid.header {
+    background-color: white;
+  }
+}
+/* line 116, scss/components/_misc.scss */
 .bg-dark {
   background-color: #222222;
   color: white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* line 42, scss/components/_misc.scss */
+/* line 120, scss/components/_misc.scss */
 .bg-dark h2 {
   color: #f5f5f5;
 }
-/* line 45, scss/components/_misc.scss */
+/* line 123, scss/components/_misc.scss */
 .bg-dark p {
   color: #fff;
 }
-/* line 48, scss/components/_misc.scss */
-.bg-dark a {
+/* line 127, scss/components/_misc.scss */
+.bg-dark .content a,
+.bg-dark .footer a {
   color: #9a9a9a;
 }
+/* line 130, scss/components/_misc.scss */
+.bg-dark .content a:hover, .bg-dark .content a:focus,
+.bg-dark .footer a:hover,
+.bg-dark .footer a:focus {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
 
-/* line 54, scss/components/_misc.scss */
+/* line 135, scss/components/_misc.scss */
+.contact.bg-dark .content a {
+  color: #648dcd;
+}
+
+/* line 141, scss/components/_misc.scss */
 i.large {
   font-size: 40px;
   font-size: 2.5rem;
 }
 
-/* line 67, scss/components/_misc.scss */
+/* line 145, scss/components/_misc.scss */
+.i-logo {
+  font-size: 56px;
+  font-size: 3.5rem;
+  color: #231f20;
+  background-color: #fff;
+  height: 35px;
+  width: 35px;
+  display: inline-block;
+  margin: 1rem;
+  position: relative;
+}
+/* line 154, scss/components/_misc.scss */
+.i-logo:before {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  margin: 0;
+}
+
+/* line 162, scss/components/_misc.scss */
+.i-cancel {
+  color: white;
+}
+
+/* line 168, scss/components/_misc.scss */
+.site-logo:hover .i-logo, .site-logo:hover h1, .site-logo:hover .site-name,
+.site-logo:focus .i-logo,
+.site-logo:focus h1,
+.site-logo:focus .site-name {
+  color: #312c2d;
+}
+
+/* line 176, scss/components/_misc.scss */
+.main section {
+  color: white;
+}
+/* line 178, scss/components/_misc.scss */
+.main section h2 {
+  color: white;
+}
+
+/* line 184, scss/components/_misc.scss */
+.page-front .main section {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+}
+/* line 188, scss/components/_misc.scss */
+.page-front .intro {
+  background-color: #374760;
+}
+/* line 191, scss/components/_misc.scss */
+.page-front .gpo {
+  background-color: #3bc161;
+}
+/* line 193, scss/components/_misc.scss */
+.page-front .gpo .case-studies {
+  background-color: white;
+  color: #231f20;
+}
+/* line 198, scss/components/_misc.scss */
+.page-front .dropfort {
+  background-color: #2e8fe8;
+}
+/* line 201, scss/components/_misc.scss */
+.page-front .uottawa {
+  background-color: #dd4460;
+}
+/* line 204, scss/components/_misc.scss */
+.page-front .drupalcamp {
+  background-color: #643d9b;
+}
+
+/* line 212, scss/components/_misc.scss */
+.footer .button {
+  display: inline-block;
+  margin-top: 1.5em;
+}
+
+/* line 217, scss/components/_misc.scss */
+.footer__light {
+  background-color: #393939;
+  margin-top: 4em;
+  padding: 1em 0 1.5em;
+}
+/* line 221, scss/components/_misc.scss */
+.footer__light span {
+  display: block;
+  margin-top: 1em;
+}
+/* line 225, scss/components/_misc.scss */
+.footer__light .t-copyright {
+  float: none;
+  text-align: center;
+}
+
+/* line 234, scss/components/_misc.scss */
 ::-moz-selection {
-  color: black;
+  color: #231f20;
   background: #eeeeee;
 }
 
-/* line 71, scss/components/_misc.scss */
+/* line 238, scss/components/_misc.scss */
 ::selection {
-  color: black;
+  color: #231f20;
   background: #eeeeee;
 }
 
-/* line 79, scss/components/_misc.scss */
+/* line 246, scss/components/_misc.scss */
 .cf:before,
 .cf:after {
   content: " ";
@@ -491,26 +732,35 @@ i.large {
   /* 2 */
 }
 
-/* line 84, scss/components/_misc.scss */
+/* line 251, scss/components/_misc.scss */
 .cf:after {
   clear: both;
 }
 
-/* line 2, scss/components/_buttons.scss */
-.button.light {
-  color: white;
+/* line 1, scss/components/_buttons.scss */
+.button {
+  border: 2px solid;
+  padding: .5em 1.5em;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  display: inline-block;
 }
-/* line 5, scss/components/_buttons.scss */
-.button.light:hover, .button.light:focus {
+/* line 7, scss/components/_buttons.scss */
+.button.light {
+  border-color: white;
+  color: white;
   background: rgba(255, 255, 255, 0.1);
 }
-/* line 9, scss/components/_buttons.scss */
+/* line 12, scss/components/_buttons.scss */
 .button.dark {
-  color: #333333;
+  color: #393939;
+  background: rgba(0, 0, 0, 0.1);
 }
-/* line 13, scss/components/_buttons.scss */
+/* line 17, scss/components/_buttons.scss */
 .button.circle {
-  border: 2px solid;
   height: 35px;
   width: 35px;
   display: inline-block;
@@ -519,8 +769,14 @@ i.large {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+/* line 24, scss/components/_buttons.scss */
+.button .i-right-open:before {
+  vertical-align: -1px;
+  margin-right: 0;
+  margin-left: .5em;
+}
 
-/* line 23, scss/components/_buttons.scss */
+/* line 31, scss/components/_buttons.scss */
 .circle {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -528,13 +784,110 @@ i.large {
   -o-border-radius: 50%;
   border-radius: 50%;
 }
-/* line 25, scss/components/_buttons.scss */
-.circle.light {
-  border-color: white;
+/* line 34, scss/components/_buttons.scss */
+.circle .light:hover,
+.circle .light:focus {
+  background: rgba(255, 255, 255, 0.1);
 }
-/* line 28, scss/components/_buttons.scss */
-.circle.dark {
-  border-color: #333333;
+
+/* line 40, scss/components/_buttons.scss */
+.main .button,
+.footer .button {
+  font-family: "Montserrat", "Futura PT", Helvetica, sans-serif;
+  font-size: 18px;
+  font-size: 1.125rem;
+}
+
+/* line 45, scss/components/_buttons.scss */
+.main .button {
+  margin-top: 1em;
+}
+
+/* line 49, scss/components/_buttons.scss */
+.main .button.circle {
+  font-size: 16px;
+  font-size: 1rem;
+}
+
+/* line 4, scss/components/_states.scss */
+#page {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  z-index: 100;
+}
+/* line 9, scss/components/_states.scss */
+#page .sliding-canvas {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: all 600ms cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: all 600ms cubic-bezier(0.19, 1, 0.22, 1);
+  -ms-transition: all 600ms cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: all 600ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 600ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+/* line 17, scss/components/_states.scss */
+#page[data-state='slide-open'] {
+  overflow: visible;
+}
+/* line 22, scss/components/_states.scss */
+#page[data-state='slide-open'] .sliding-canvas {
+  -webkit-transform: translateY(582px);
+  -moz-transform: translateY(582px);
+  -ms-transform: translateY(582px);
+  -o-transform: translateY(582px);
+  transform: translateY(582px);
+}
+@media only screen and (min-width: 20em) {
+  /* line 22, scss/components/_states.scss */
+  #page[data-state='slide-open'] .sliding-canvas {
+    -webkit-transform: translateY(550px);
+    -moz-transform: translateY(550px);
+    -ms-transform: translateY(550px);
+    -o-transform: translateY(550px);
+    transform: translateY(550px);
+  }
+}
+@media only screen and (min-width: 37.5em) {
+  /* line 22, scss/components/_states.scss */
+  #page[data-state='slide-open'] .sliding-canvas {
+    -webkit-transform: translateY(400px);
+    -moz-transform: translateY(400px);
+    -ms-transform: translateY(400px);
+    -o-transform: translateY(400px);
+    transform: translateY(400px);
+  }
+}
+
+/**
+ * Navigation
+ */
+/* line 38, scss/components/_states.scss */
+.contact {
+  position: absolute;
+  width: 100%;
+  top: -582px;
+  height: 582px;
+}
+@media only screen and (min-width: 20em) {
+  /* line 38, scss/components/_states.scss */
+  .contact {
+    top: -550px;
+    height: 550px;
+  }
+}
+@media only screen and (min-width: 37.5em) {
+  /* line 38, scss/components/_states.scss */
+  .contact {
+    top: -400px;
+    height: 400px;
+  }
 }
 
 /***********************/

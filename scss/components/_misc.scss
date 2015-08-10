@@ -26,12 +26,90 @@ img {
   max-width: 100%;
 }
 
-
-
 .date {
   font-style: italic;
   color: $gray;
 }
+
+
+// Header
+
+.header{
+  text-align: center;
+  padding: 1em 0 1.5em;
+  //background-color: red;
+  .site-logo{
+    text-transform: uppercase; 
+    display: inline-block;
+
+    i{
+      float: left;
+    }
+    h1, 
+    .site-name{
+      color: $darkerGray;
+      font-family: $montserrat;
+      display: none;
+      font-weight: bold;
+      @include rem-fallback(font-size, 1.875); // 30px
+      margin-top: .6em;
+      margin-left: .75em;
+      letter-spacing: 1px;
+    }
+  }
+
+  nav{
+    font-family: $montserrat;
+    margin-top: .75em;
+    ul{
+      list-style-type: none;
+      @include zero;
+    }
+    li{
+      display: inline-block;
+      text-transform: uppercase;
+      margin: .2em;
+    }
+    a{
+      color: $white; 
+      display: block;
+      padding: .5em;
+      @include anti-aliasing;
+      &:hover{
+        background-color: rgba(255,255,255, 0.1);
+      }
+    }
+  }
+}
+
+
+.header .wrapper{
+  padding: 0;
+}
+
+.border-thin{
+  border: 1px solid #d2d2d2;
+  @include border-radius(3px);
+}
+
+@media #{$tablet} { 
+  .is-solid.header .site-logo{
+    h1, .site-name{
+      display: inline-block;
+    }
+    nav a{
+      color: $gray;
+      &:hover{
+        color: $black;
+      }
+    }
+  }
+
+  .is-solid.header{
+    background-color: $white;
+  }
+
+} 
 
 // Background Colors
 
@@ -45,21 +123,110 @@ img {
   p{
     color: #fff;
   }
-  a{
+  .content a, 
+  .footer a{ 
     color: #9a9a9a;
+    &:hover, 
+    &:focus{
+      border-bottom: 1px solid rgba(255,255,255, 0.15);
+    }
   }
 }
+.contact.bg-dark .content a{
+  color: $light-blue; 
+}
+
 
 // Icons
 i.large{
   @include rem-fallback(font-size, 2.5); // 40px
 }
 
+.i-logo{
+  @include rem-fallback(font-size, 3.5); // 56px
+  color: #231f20;
+  background-color: #fff;
+  height: 35px;
+  width: 35px;
+  display: inline-block;
+  margin: 1rem;
+  position: relative;
+  &:before{
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    margin: 0;
+  }
+}
+
+.i-cancel{
+  color: $white;
+}
+
+.site-logo:hover, 
+.site-logo:focus{
+  .i-logo, h1, .site-name{
+    color: #312c2d;
+  }
+}
 
 
+// Home Page Sections
+
+.main section{
+  color: $white;
+  h2{
+    color: $white;
+  }
+}
+
+.page-front{
+  .main section{
+    @include anti-aliasing;
+    text-align: center;
+  }
+  .intro{
+    background-color: $navy;
+  }
+  .gpo{
+    background-color: $green;
+    .case-studies{
+      background-color: $white;
+      color: $black;
+    }
+  }
+  .dropfort{
+    background-color: $bright-blue;
+  }
+  .uottawa{
+    background-color: $pink;
+  }
+  .drupalcamp{
+    background-color: $purple;
+  }
+}
 
 
+// Footer
 
+.footer .button{
+  display: inline-block;
+  margin-top: 1.5em;
+}
+
+.footer__light{
+  background-color: $darkGray;
+  margin-top: 4em;
+  padding: 1em 0 1.5em;
+  span{
+    display: block;
+    margin-top: 1em;
+  }
+  .t-copyright{
+    float: none;
+    text-align: center;
+  }
+}
 
 
 

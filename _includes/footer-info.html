@@ -1,21 +1,23 @@
 
-      <div class="l-center t-center">
+      <div class="wrapper t-center">
         <p class="gamma">Want to get in touch?</p>
-        <p class="gamma">Send me an <a href="mailto:hey@tiffanytse.ca">email</a> or find me on {% if site.footer-links.twitter %}<a href="https://www.twitter.com/{{ site.footer-links.twitter }}">twitter</a>,{% endif %}
-        {% if site.footer-links.linkedin %}<a href="https://www.linkedin.com/in/{{ site.footer-links.linkedin }}">linkedin</a>,{% endif %}
-        {% if site.footer-links.dribbble %}<a href="https://dribbble.com/{{ site.footer-links.dribbble }}">dribbble</a>, and {% endif %}
-        {% if site.footer-links.github %}<a href="https://github.com/{{ site.footer-links.github }}">github</a>.{% endif %}
+        <p class="gamma">Send me an <a href="mailto:hey@tiffanytse.ca">email</a> or find me on {% if site.footer-links.twitter %}<a href="https://www.twitter.com/{{ site.footer-links.twitter }}" rel="external">twitter</a>,{% endif %}
+        {% if site.footer-links.linkedin %}<a href="https://www.linkedin.com/in/{{ site.footer-links.linkedin }}" rel="external">linkedin</a>,{% endif %}
+        {% if site.footer-links.dribbble %}<a href="https://dribbble.com/{{ site.footer-links.dribbble }}" rel="external">dribbble</a>, and {% endif %}
+        {% if site.footer-links.github %}<a href="https://github.com/{{ site.footer-links.github }}" rel="external">github</a>.{% endif %}
         </p>
         {% if page.class == "about" %}
-        <a href="{{ site.baseurl }}/#case-studies" class="button light">Check out my recent work  <i class="i-right-open"></i></a>
+        <a href="{{ site.baseurl }}/#case-studies" class="button light">View Recent Work  <i class="i-right-open"></i></a>
         {% else %}
-        <a href="about/" class="button light">Find out more about me  <i class="i-right-open"></i></a>
+        <a href="about/" class="button light">Learn About Me  <i class="i-right-open"></i></a>
         {% endif %}
       </div>
 
       <div class="footer__light cf">
-        <p class="copyright l-left">
-          <a href="{{ site.baseurl }}/"><i class="i-logo"></i><span class="hide-text">Tiffany Tse</span></a>
-          Built with love and <a href="https://github.com/tiffanytse/tiffanytse.ca">Github</a>.</p>
-        <p class="copyright l-right">Copyright &copy; Tiffany Tse 2015</p>
+        <div class="wrapper">
+        <p class="t-copyright l-left">
+          <a class="site-logo" href="{{ site.baseurl }}/"><i class="i-logo"></i><span class="element-invisible">Tiffany Tse</span></a>
+          <span>Built with love and <a href="https://github.com/tiffanytse/tiffanytse.ca" rel="external">Github</a>.</span></p>
+        <p class="t-copyright l-right">Copyright &copy; Tiffany Tse 2015</p>
+        </div>
       </div>

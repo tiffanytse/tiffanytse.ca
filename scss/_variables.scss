@@ -3,13 +3,19 @@
  */
 
 // Colors
-$blue: #4183C4; 
+$light-blue: #648dcd; 
+$blue: #2064ce; 
+$navy: #374760;
+$green: #3bc161;
+$bright-blue: #2e8fe8;
+$pink: #dd4460;
+$purple: #643d9b;
 
 // Grays
-$black: #000;
+$black: #231f20;
 $darkerGray: #222;
-$darkGray: #333;
-$gray: #666;
+$darkGray: #393939;
+$gray: #444;
 $lightGray: #eee;
 $white: #fff;
 
@@ -27,19 +33,29 @@ $open-sans:       'Open Sans', Helvetica, sans-serif;
 $primary-font: $open-sans;
 $text-color: $darkGray;
 
-// Mobile breakpoints
-@mixin mobile {
-  @media screen and (max-width: 520px) {
-    @content;
-  }
-}
+// Media Query Variables
+// Usage: 
+// @media #{$mobile} {
+//   background: red;
+// }
+
+$mobile: "only screen and (min-width: 20em)"; //320px
+$mobile-landscape: "only screen and (min-width: 30em)"; //480px
+$tablet: "only screen and (min-width: 37.5em)"; //600px
+$tablet-landscape: "only screen and (min-width: 60em)"; //960px
+$desktop-small: "only screen and (min-width: 75em)"; //1200px
+$desktop: "only screen and (min-width: 87.5em)"; //1400px
+$desktop-large: "only screen and (min-width: 100em)"; //1600px
+$desktop-xlarge: "only screen and (min-width: 110em)"; //1760px
+
 
 // Compass Imports
 
-@import "compass/reset";
-@import "compass/utilities";
+// @import "compass/reset";
+// @import "compass/utilities";
 @import "compass/css3";
 @import "compass/typography/vertical_rhythm";
+@import "zen";
 
 
 $base-font-size: 16px;

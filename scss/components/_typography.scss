@@ -5,10 +5,10 @@
 h1, h2, h3, h4, h5, h6 {
   font-family: $montserrat;
   color: $darkerGray;
-  line-height: 1.2; 
+  line-height: 1.4;
 
-  @include mobile {
-    line-height: 1.4;
+  @media #{$tablet}{
+    line-height: 1.2; 
   }
 }
   
@@ -21,35 +21,44 @@ h1, .alpha{
 }
 
 h2, .beta{
-  @include rem-fallback(font-size, 2.5);
+  @include rem-fallback(font-size, 2.5); // 40px
 }
 
-.article h2{
-  @include rem-fallback(font-size, 1.25); // 20px
+article h2, 
+.case-studies{
+  @include rem-fallback(font-size, 1.25); // 18px
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 h3, .gamma{  
   font-family: $cardo;
-  @include rem-fallback(font-size, 1.375); // 22px 
+  @include rem-fallback(font-size, 1.25); // 18px 
 }
 
-h4 {  
-  font-size: 18px;
+h4, .delta{  
+  @include rem-fallback(font-size, 1.25); // 18px 
+  color: $gray;
+}
+
+h5, .epsilon{  
+  @include rem-fallback(font-size, 1); // 16px
+  text-transform: uppercase; 
   color: $gray;
 }
 
 p {
-  margin: 15px 0;
+  margin: .5em 0 0;
+  line-height: 1.6;
 }
 
 a {
-  color: $text-color;
+  color: $gray;
   text-decoration: none;
   cursor: pointer;
   font-weight: bold; 
   &:hover, &:active {
-    color: $blue;
+    color: $lightGray;
   }
 }
 
@@ -89,3 +98,9 @@ strong {
 .t-center{
   text-align: center;
 }
+
+.t-copyright{
+  @include rem-fallback(font-size, .75); //12px
+  font-family: $montserrat; 
+}
+

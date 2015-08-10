@@ -1,33 +1,51 @@
 .button{
+  border: 2px solid;
+  padding: .5em 1.5em;
+  @include border-radius(3px);
+  display: inline-block;
+
   &.light{
+    border-color: $white;
     color: $white;
-    &:hover, 
-    &:focus{
-      @include background(rgba(255,255,255, 0.1));
-    }
+    @include background(rgba(255,255,255, 0.1));
   }
   &.dark{
-  color: $darkGray;
+    color: $darkGray;
+    @include background(rgba(0,0,0, 0.1));
   }
 
   &.circle{
-    border: 2px solid;
     height: 35px;
     width: 35px;
     display: inline-block;
     padding: .3em .25em .25em;
     @include box-sizing(border-box);
   }
+  .i-right-open:before{
+    vertical-align: -1px;
+    margin-right: 0;
+    margin-left: .5em;
+  }
 }
 
 .circle{
   @include border-radius(50%);
-  &.light{
-    border-color: $white;
-  }
-  &.dark{
-    border-color: $darkGray;
+  .light:hover, 
+  .light:focus{
+    @include background(rgba(255,255,255, 0.1));
   }
 }
 
+.main .button, 
+.footer .button{ 
+  font-family: $montserrat;
+  @include rem-fallback(font-size, 1.125); //18px
+}
 
+.main .button{
+  margin-top: 1em;
+}
+
+.main .button.circle{
+  @include rem-fallback(font-size, 1); //16px
+}
