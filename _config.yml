@@ -17,12 +17,12 @@ avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/je
 
 # Includes an icon in the footer for each username you enter
 footer-links:
-  dribbble: https://dribbble.com/tiffanytse
+  dribbble: tiffanytse
   email: hey@tiffanytse.ca
-  github: https://github.com/tiffanytse
-  linkedin: https://ca.linkedin.com/pub/tiffany-tse/19/9ab/874
+  github: tiffanytse
+  linkedin: tiffanyjtse
   rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
-  twitter: https://twitter.com/tiffany_tse
+  twitter: tiffany_tse
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account

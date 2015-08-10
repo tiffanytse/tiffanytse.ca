@@ -537,8 +537,8 @@ img {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* line 78, scss/components/_misc.scss */
-.header nav a:hover {
+/* line 79, scss/components/_misc.scss */
+.header nav .contact-btn:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -592,14 +592,11 @@ img {
   color: #fff;
 }
 /* line 127, scss/components/_misc.scss */
-.bg-dark .content a,
-.bg-dark .footer a {
+.bg-dark .content a, .bg-dark.footer p a {
   color: #9a9a9a;
 }
 /* line 130, scss/components/_misc.scss */
-.bg-dark .content a:hover, .bg-dark .content a:focus,
-.bg-dark .footer a:hover,
-.bg-dark .footer a:focus {
+.bg-dark .content a:hover, .bg-dark .content a:focus, .bg-dark.footer p a:hover, .bg-dark.footer p a:focus {
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 
