@@ -45,17 +45,15 @@ $(document).ready(function() {
        }
     });
 
-    // Enable smooth scroll on anchor elements
-    // $('a[href^="#"]').on('click', function(event) {
+    // Waypoints
 
-    //     var target = $( $(this).attr('href') );
+    var waypoint = new Waypoint({
+      element: document.getElementById('wp'),
+      handler: function(direction) {
+        $('.circle-wrap').addClass('run');
+      },
+      offset: 600
+    });
 
-    //     if( target.length ) {
-    //         event.preventDefault();
-    //         $('html, body').animate({
-    //             scrollTop: target.offset().top //Offset the header
-    //         }, 1000);
-    //     }
 
-    // });
 });

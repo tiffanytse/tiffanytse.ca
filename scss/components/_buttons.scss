@@ -3,6 +3,7 @@
   padding: .5em 1.5em;
   @include border-radius(3px);
   display: inline-block;
+  @include ease(all, 250ms, ease-in-out);
 
   &.light{
     border-color: $white;
@@ -13,6 +14,10 @@
     color: $darkGray;
     border-color: #acacac;
     @include background(rgba(0,0,0, 0.1));
+    &:hover, 
+    &:focus{
+      border: 2px solid #acacac;
+    }
   }
 
   &.circle{
@@ -30,6 +35,14 @@
   &:hover, 
   &:focus{
     border-bottom: 2px solid;
+    background-color: transparent;
+  }
+
+  &.l-left{
+    float: left;
+  }
+  &.l-right{
+    float: right;
   }
 }
 
@@ -73,5 +86,5 @@ header.is-solid nav .contact-btn{
 
 .pager .button{
   @include rem-fallback(font-size, 1); //16px
-  margin-top: 0;
+  margin-top: 1em;
 }

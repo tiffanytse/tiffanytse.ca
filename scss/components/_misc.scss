@@ -32,9 +32,22 @@ img {
 }
 
 
+// Background Colors
+
+.bg-dark{
+  background-color: $darkerGray;
+  color: $white;
+  h2{
+    color: $white;
+  }
+}
+
+.margin-top{
+  margin-top: 2em;
+  display: block;
+}
+
 // Header
-
-
 .header{
   position:relative;
   z-index: 1000;
@@ -117,7 +130,6 @@ img {
 
 
 // Background Colors
-
 .bg-dark{
   background-color: $darkerGray;
   color: $white;
@@ -137,10 +149,10 @@ img {
     }
   }
 }
+
 .contact.bg-dark .content a{
   color: $light-blue; 
 }
-
 
 // Icons
 i.large{
@@ -179,6 +191,12 @@ i.large{
 // Home Page Sections
 .main section{
   @include anti-aliasing;
+}
+
+.page-page{
+  section.intro{
+    background-color: $navy;
+  }
 }
 
 .page-front{
@@ -270,6 +288,27 @@ i.large{
 
 // Work
 
+.main-content img{
+  width: 100%;
+  margin: 2em auto;
+  border: 1px solid #ccc;
+  &.small{
+    max-width: 500px;
+  }
+  &.no-border{
+    border: 0;
+  }
+  &.center{
+    margin: 0 auto;
+    display: block;
+  }
+  &.add-margin{
+    margin: 2em auto;
+    display: block;
+  }
+
+}
+
 .page-gpo .intro{
   background: $green url('images/gpo-angles.png') no-repeat right center; 
   background-size: cover;
@@ -327,7 +366,6 @@ i.large{
     text-align: center;
   }
 }
-
 
 
 // Specify the color of the selection

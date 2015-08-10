@@ -29,9 +29,11 @@ $zen-auto-include-item-base: false;
 }
 
 .wrapper{
-  max-width: 700px;
+  max-width: 45em;
   margin: 0 auto;
 }
+
+
 
 .header .wrapper{
   padding: 0;
@@ -91,7 +93,7 @@ $zen-auto-include-item-base: false;
       .picture{
         @include zen-grid-item(5, 2);
         position:relative;
-        bottom: -5em;
+        bottom: 0;
       }
     }
 
@@ -139,19 +141,9 @@ $zen-auto-include-item-base: false;
 }
 
 
-
-
-
-
-
-
-
-
 /**
  * Layout
  */
-
-
 @media #{$tablet} {
   .l-left{
     float: left;
@@ -159,6 +151,21 @@ $zen-auto-include-item-base: false;
 
   .l-right{
     float: right;
+  }
+}
+
+
+@media #{$tablet} {
+  .main-content{
+    .img-left{
+      @include zen-grid-item(6, 1);
+      margin-left: -2.5%;
+    }
+
+    .img-right{
+      @include zen-grid-item(6, 8);
+      margin-left: 52.333%;
+    }
   }
 }
 
@@ -201,10 +208,34 @@ $zen-auto-include-item-base: false;
 }
 
 .main .main-content{
-  max-width: 700px;
+  //max-width: 700px;
   margin: 0 auto;
   padding: 2em 1.5em 4em;
   @include anti-aliasing;
+}
+
+.page-blog, .page-about{
+  .main .main-content{
+    max-width: 45em;
+  }
+}
+
+.page-uottawa, 
+.page-drupalcamp, 
+.page-dropfort, 
+.page-gpo, 
+.page-page{
+  .main-content .wrapper{
+    max-width: 1000px;
+    padding: 0;
+    p{
+      max-width: 45em;
+      margin: 0 auto;
+    } 
+    h2{
+      text-align: center;
+    }
+  }
 }
 
 .posts > .post {
@@ -273,5 +304,4 @@ footer {
       }
     }
   } 
-
 }

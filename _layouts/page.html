@@ -2,15 +2,20 @@
 layout: default
 class: page 
 ---
-<div class="main-content">
-  <article class="page">
 
-    <h1>{{ page.title }}</h1>
-
-    <div class="entry">
-      {{ content }}
+<section class="section intro">
+  <div class="wrapper">
+    <div class="content t-center">
+      <h1 class="light">{{ page.title }}</h1>
     </div>
+  </div>
+</section>
 
-  </article>
+
+<div class="main-content">
+  <div class="wrapper">
+    <article>
+      {{ content }}
+    </article>
+  </div>
 </div>
-
