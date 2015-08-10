@@ -182,24 +182,29 @@ h1.light, h2.light, h3.light, h4.light, h5.light, h6.light {
   color: white;
 }
 
-/* line 18, scss/components/_typography.scss */
+/* line 19, scss/components/_typography.scss */
+article h1, article h2, article h3, article h4, article h5, article h6 {
+  margin: 1em 0 .5em;
+}
+
+/* line 24, scss/components/_typography.scss */
 h1, .alpha {
   font-weight: 400;
   font-size: 40px;
   font-size: 2.5rem;
 }
-/* line 21, scss/components/_typography.scss */
+/* line 27, scss/components/_typography.scss */
 h1 a, .alpha a {
   color: inherit;
 }
 
-/* line 26, scss/components/_typography.scss */
+/* line 32, scss/components/_typography.scss */
 h2, .beta {
   font-size: 40px;
   font-size: 2.5rem;
 }
 
-/* line 31, scss/components/_typography.scss */
+/* line 37, scss/components/_typography.scss */
 article h2,
 .case-studies {
   font-size: 20px;
@@ -208,21 +213,21 @@ article h2,
   font-weight: bold;
 }
 
-/* line 37, scss/components/_typography.scss */
+/* line 43, scss/components/_typography.scss */
 h3, .gamma {
   font-family: "Cardo", Georgia, serif;
   font-size: 20px;
   font-size: 1.25rem;
 }
 
-/* line 42, scss/components/_typography.scss */
+/* line 48, scss/components/_typography.scss */
 h4, .delta {
   font-size: 20px;
   font-size: 1.25rem;
   color: #444444;
 }
 
-/* line 47, scss/components/_typography.scss */
+/* line 53, scss/components/_typography.scss */
 h5, .epsilon {
   font-size: 16px;
   font-size: 1rem;
@@ -230,71 +235,71 @@ h5, .epsilon {
   color: #444444;
 }
 
-/* line 53, scss/components/_typography.scss */
+/* line 59, scss/components/_typography.scss */
 p {
   margin: .5em 0 0;
   line-height: 1.6;
 }
-/* line 56, scss/components/_typography.scss */
+/* line 62, scss/components/_typography.scss */
 p.light {
   color: white;
 }
 
-/* line 62, scss/components/_typography.scss */
+/* line 68, scss/components/_typography.scss */
 .main-content p {
   margin: 1em 0 0;
   line-height: 1.9;
 }
 
-/* line 68, scss/components/_typography.scss */
+/* line 74, scss/components/_typography.scss */
 a {
   color: #444444;
   text-decoration: none;
   cursor: pointer;
   font-weight: bold;
 }
-/* line 73, scss/components/_typography.scss */
+/* line 79, scss/components/_typography.scss */
 a:hover, a:active {
   color: #eeeeee;
 }
 
-/* line 78, scss/components/_typography.scss */
+/* line 84, scss/components/_typography.scss */
 ul, ol {
   margin: 15px 0;
   padding-left: 30px;
 }
 
-/* line 83, scss/components/_typography.scss */
+/* line 89, scss/components/_typography.scss */
 ul {
   list-style-type: disc;
 }
 
-/* line 87, scss/components/_typography.scss */
+/* line 93, scss/components/_typography.scss */
 ol {
   list-style-type: decimal;
 }
 
-/* line 91, scss/components/_typography.scss */
+/* line 97, scss/components/_typography.scss */
 ol ul, ul ol, ul ul, ol ol {
   margin: 0;
 }
 
-/* line 95, scss/components/_typography.scss */
+/* line 101, scss/components/_typography.scss */
 ul ul, ol ul {
   list-style-type: circle;
 }
 
-/* line 99, scss/components/_typography.scss */
+/* line 105, scss/components/_typography.scss */
 em {
   font-style: italic;
 }
 
-/* line 103, scss/components/_typography.scss */
+/* line 109, scss/components/_typography.scss */
 strong {
   font-weight: 600;
 }
 
-/* line 107, scss/components/_typography.scss */
+/* line 113, scss/components/_typography.scss */
 .hide-text {
   text-indent: 100%;
   white-space: nowrap;
@@ -302,12 +307,12 @@ strong {
   display: block;
 }
 
-/* line 111, scss/components/_typography.scss */
+/* line 117, scss/components/_typography.scss */
 .t-center {
   text-align: center;
 }
 
-/* line 115, scss/components/_typography.scss */
+/* line 121, scss/components/_typography.scss */
 .t-copyright {
   font-size: 12px;
   font-size: 0.75rem;
@@ -731,54 +736,52 @@ i.large {
 
 /* line 212, scss/components/_misc.scss */
 .page-about .intro {
-  background: url("images/about.jpg") center center;
-  background-size: cover;
-  background-position: fixed;
+  background: url("images/about.jpg") top center;
+  background-attachment: fixed;
 }
 
-/* line 220, scss/components/_misc.scss */
+/* line 219, scss/components/_misc.scss */
 .page-blog .intro {
-  background: url("images/about.jpg") center center;
-  background-size: cover;
-  background-position: fixed;
+  background: url("images/about.jpg") top center;
+  background-attachment: fixed;
 }
 
-/* line 230, scss/components/_misc.scss */
+/* line 228, scss/components/_misc.scss */
 .footer .button {
   display: inline-block;
   margin-top: 1.5em;
 }
 
-/* line 235, scss/components/_misc.scss */
+/* line 233, scss/components/_misc.scss */
 .footer__light {
   background-color: #393939;
   margin-top: 4em;
   padding: 1em 0 1.5em;
 }
-/* line 239, scss/components/_misc.scss */
+/* line 237, scss/components/_misc.scss */
 .footer__light span {
   display: block;
   margin-top: 1em;
 }
-/* line 243, scss/components/_misc.scss */
+/* line 241, scss/components/_misc.scss */
 .footer__light .t-copyright {
   float: none;
   text-align: center;
 }
 
-/* line 252, scss/components/_misc.scss */
+/* line 250, scss/components/_misc.scss */
 ::-moz-selection {
   color: #231f20;
   background: #eeeeee;
 }
 
-/* line 256, scss/components/_misc.scss */
+/* line 254, scss/components/_misc.scss */
 ::selection {
   color: #231f20;
   background: #eeeeee;
 }
 
-/* line 264, scss/components/_misc.scss */
+/* line 262, scss/components/_misc.scss */
 .cf:before,
 .cf:after {
   content: " ";
@@ -787,7 +790,7 @@ i.large {
   /* 2 */
 }
 
-/* line 269, scss/components/_misc.scss */
+/* line 267, scss/components/_misc.scss */
 .cf:after {
   clear: both;
 }

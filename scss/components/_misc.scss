@@ -210,17 +210,15 @@ i.large{
 
 .page-about{
   .intro{
-    background: url('images/about.jpg') center center; 
-    background-size: cover;
-    background-position: fixed;
+    background: url('images/about.jpg') top center; 
+    background-attachment: fixed;
   }
 }
 
 .page-blog{
   .intro{
-    background: url('images/about.jpg') center center; 
-    background-size: cover;
-    background-position: fixed;
+    background: url('images/about.jpg') top center; 
+    background-attachment: fixed;
   }
 }
 
