@@ -42,4 +42,17 @@ $(document).ready(function() {
        }
     });
 
+    // Enable smooth scroll on anchor elements
+    // $('a[href^="#"]').on('click', function(event) {
+
+    //     var target = $( $(this).attr('href') );
+
+    //     if( target.length ) {
+    //         event.preventDefault();
+    //         $('html, body').animate({
+    //             scrollTop: target.offset().top //Offset the header
+    //         }, 1000);
+    //     }
+
+    // });
 });

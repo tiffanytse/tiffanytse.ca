@@ -204,8 +204,14 @@ h2, .beta {
   font-size: 2.5rem;
 }
 
-/* line 37, scss/components/_typography.scss */
+/* line 36, scss/components/_typography.scss */
+.gamma + h2 {
+  margin-top: 0;
+}
+
+/* line 42, scss/components/_typography.scss */
 article h2,
+article .beta,
 .case-studies {
   font-size: 20px;
   font-size: 1.25rem;
@@ -213,21 +219,30 @@ article h2,
   font-weight: bold;
 }
 
-/* line 43, scss/components/_typography.scss */
+/* line 48, scss/components/_typography.scss */
 h3, .gamma {
   font-family: "Cardo", Georgia, serif;
   font-size: 20px;
   font-size: 1.25rem;
 }
 
-/* line 48, scss/components/_typography.scss */
+/* line 54, scss/components/_typography.scss */
+article h3,
+article .gamma {
+  font-family: "Cardo", Georgia, serif;
+  font-size: 14px;
+  font-size: 0.875rem;
+  color: #444444;
+}
+
+/* line 60, scss/components/_typography.scss */
 h4, .delta {
   font-size: 20px;
   font-size: 1.25rem;
   color: #444444;
 }
 
-/* line 53, scss/components/_typography.scss */
+/* line 65, scss/components/_typography.scss */
 h5, .epsilon {
   font-size: 16px;
   font-size: 1rem;
@@ -235,71 +250,76 @@ h5, .epsilon {
   color: #444444;
 }
 
-/* line 59, scss/components/_typography.scss */
+/* line 71, scss/components/_typography.scss */
 p {
   margin: .5em 0 0;
   line-height: 1.6;
 }
-/* line 62, scss/components/_typography.scss */
+/* line 74, scss/components/_typography.scss */
 p.light {
   color: white;
 }
 
-/* line 68, scss/components/_typography.scss */
+/* line 80, scss/components/_typography.scss */
 .main-content p {
   margin: 1em 0 0;
   line-height: 1.9;
 }
 
-/* line 74, scss/components/_typography.scss */
+/* line 86, scss/components/_typography.scss */
 a {
   color: #444444;
   text-decoration: none;
   cursor: pointer;
   font-weight: bold;
+  -webkit-transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  -ms-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
 }
-/* line 79, scss/components/_typography.scss */
+/* line 92, scss/components/_typography.scss */
 a:hover, a:active {
   color: #d2d2d2;
 }
 
-/* line 84, scss/components/_typography.scss */
+/* line 97, scss/components/_typography.scss */
 ul, ol {
   margin: 15px 0;
   padding-left: 30px;
 }
 
-/* line 89, scss/components/_typography.scss */
+/* line 102, scss/components/_typography.scss */
 ul {
   list-style-type: disc;
 }
 
-/* line 93, scss/components/_typography.scss */
+/* line 106, scss/components/_typography.scss */
 ol {
   list-style-type: decimal;
 }
 
-/* line 97, scss/components/_typography.scss */
+/* line 110, scss/components/_typography.scss */
 ol ul, ul ol, ul ul, ol ol {
   margin: 0;
 }
 
-/* line 101, scss/components/_typography.scss */
+/* line 114, scss/components/_typography.scss */
 ul ul, ol ul {
   list-style-type: circle;
 }
 
-/* line 105, scss/components/_typography.scss */
+/* line 118, scss/components/_typography.scss */
 em {
   font-style: italic;
 }
 
-/* line 109, scss/components/_typography.scss */
+/* line 122, scss/components/_typography.scss */
 strong {
   font-weight: 600;
 }
 
-/* line 113, scss/components/_typography.scss */
+/* line 126, scss/components/_typography.scss */
 .hide-text {
   text-indent: 100%;
   white-space: nowrap;
@@ -307,12 +327,12 @@ strong {
   display: block;
 }
 
-/* line 117, scss/components/_typography.scss */
+/* line 130, scss/components/_typography.scss */
 .t-center {
   text-align: center;
 }
 
-/* line 121, scss/components/_typography.scss */
+/* line 134, scss/components/_typography.scss */
 .t-copyright {
   font-size: 12px;
   font-size: 0.75rem;
@@ -456,21 +476,28 @@ strong {
   max-width: 700px;
   margin: 0 auto;
   padding: 2em 1.5em 4em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 129, scss/components/_layout.scss */
+/* line 130, scss/components/_layout.scss */
 .posts > .post {
   padding-bottom: 2em;
   border-bottom: 1px solid #d2d2d2;
 }
 
-/* line 134, scss/components/_layout.scss */
+/* line 135, scss/components/_layout.scss */
+.posts > .post:first-child {
+  border-top: 1px solid #d2d2d2;
+}
+
+/* line 139, scss/components/_layout.scss */
 .posts > .post:last-child {
   padding-bottom: 1em;
   border-bottom: none;
 }
 
-/* line 140, scss/components/_layout.scss */
+/* line 145, scss/components/_layout.scss */
 .post blockquote {
   margin: 1.8em .8em;
   border-left: 2px solid #444444;
@@ -480,20 +507,20 @@ strong {
   font-style: italic;
 }
 
-/* line 150, scss/components/_layout.scss */
+/* line 155, scss/components/_layout.scss */
 footer {
   padding: 3em 0 0;
 }
 
 @media only screen and (min-width: 37.5em) {
-  /* line 156, scss/components/_layout.scss */
+  /* line 161, scss/components/_layout.scss */
   .header .wrapper,
   .footer__light .wrapper {
     max-width: 1280px;
     padding: 0 1em;
   }
 
-  /* line 162, scss/components/_layout.scss */
+  /* line 167, scss/components/_layout.scss */
   .header__site-info {
     float: left;
     width: 33.33333%;
@@ -502,7 +529,7 @@ footer {
     text-align: left;
   }
 
-  /* line 166, scss/components/_layout.scss */
+  /* line 171, scss/components/_layout.scss */
   .header nav {
     float: right;
     width: 66.66667%;
@@ -511,22 +538,22 @@ footer {
     text-align: right;
   }
 
-  /* line 172, scss/components/_layout.scss */
+  /* line 177, scss/components/_layout.scss */
   .footer__light .t-copyright.l-left {
     float: left;
     text-align: left;
   }
-  /* line 176, scss/components/_layout.scss */
+  /* line 181, scss/components/_layout.scss */
   .footer__light .t-copyright.l-right {
     float: right;
     text-align: right;
     padding-top: 2.4em;
   }
-  /* line 181, scss/components/_layout.scss */
+  /* line 186, scss/components/_layout.scss */
   .footer__light .t-copyright .site-logo {
     float: left;
   }
-  /* line 184, scss/components/_layout.scss */
+  /* line 189, scss/components/_layout.scss */
   .footer__light .t-copyright span {
     display: inline-block;
     margin-top: 2.4em;

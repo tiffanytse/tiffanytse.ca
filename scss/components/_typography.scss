@@ -33,7 +33,12 @@ h2, .beta{
   @include rem-fallback(font-size, 2.5); // 40px
 }
 
-article h2, 
+.gamma + h2{
+  margin-top: 0;
+}
+
+article h2,
+article .beta, 
 .case-studies{
   @include rem-fallback(font-size, 1.25); // 18px
   text-transform: uppercase;
@@ -43,6 +48,13 @@ article h2,
 h3, .gamma{  
   font-family: $cardo;
   @include rem-fallback(font-size, 1.25); // 18px 
+}
+
+article h3, 
+article .gamma{
+  font-family: $cardo;
+  @include rem-fallback(font-size, .875); // 14px 
+  color: $gray;
 }
 
 h4, .delta{  
@@ -76,6 +88,7 @@ a {
   text-decoration: none;
   cursor: pointer;
   font-weight: bold; 
+  @include ease(all, 250ms, ease-in-out);
   &:hover, &:active {
     color: $lightGray;
   }

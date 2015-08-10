@@ -124,11 +124,16 @@ $zen-auto-include-item-base: false;
   max-width: 700px;
   margin: 0 auto;
   padding: 2em 1.5em 4em;
+  @include anti-aliasing;
 }
 
 .posts > .post {
   padding-bottom: 2em;
   border-bottom: 1px solid $lightGray;
+}
+
+.posts > .post:first-child {
+  border-top: 1px solid $lightGray;
 }
 
 .posts > .post:last-child {
