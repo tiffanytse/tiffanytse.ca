@@ -34,6 +34,7 @@ img {
 
 // Header
 
+
 .header{
   text-align: center;
   padding: 1em 0 1.5em;
@@ -41,7 +42,6 @@ img {
   .site-logo{
     text-transform: uppercase; 
     display: inline-block;
-
     i{
       float: left;
     }
@@ -93,6 +93,7 @@ img {
 
 @media #{$tablet} { 
   .is-solid.header .site-logo{
+    opacity: 1;
     h1, .site-name{
       display: inline-block;
     }
@@ -106,9 +107,17 @@ img {
 
   .is-solid.header{
     background-color: $white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0; 
   }
 
 } 
+
+.site-logo{
+  opacity: .75;
+}
 
 // Background Colors
 
@@ -215,9 +224,24 @@ i.large{
   }
 }
 
+.item-list{
+  @include zero;
+  list-style-type: none;
+  li{
+    border-bottom: 1px solid $lightGray;
+    padding: 1em 0;
+    p{
+      margin: 0;
+    }
+    &:last-child{
+      border-bottom: 0;
+    }
+  }
+}
+
 .page-blog{
   .intro{
-    background: url('images/about.jpg') top center; 
+    background: url('images/blog.jpg') top center; 
     background-attachment: fixed;
   }
 }

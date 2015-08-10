@@ -12,7 +12,8 @@
     <!-- Forked base from Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
 
-  <body class="page-{{ page.class }}">
+  <body class="page-{{ page.class }}{% if page.url != "/index.html" %} not-front{% endif %}">
+    
     <div id="page" data-state="slide-closed">
       <div class="sliding-canvas">
         <section class="contact bg-dark">

@@ -68,12 +68,20 @@ $zen-auto-include-item-base: false;
  * Layout
  */
 
-.l-left{
-  float: left;
+
+@media #{$tablet} {
+  .l-left{
+    float: left;
+  }
+
+  .l-right{
+    float: right;
+  }
 }
 
-.l-right{
-  float: right;
+
+.margin{
+  margin: 2em 0;
 }
 
 //
@@ -155,7 +163,5 @@ footer {
     @include zen-grid-item(8, 1, right);
     text-align: right;
   }
-
-
 
 }
