@@ -842,7 +842,7 @@ img {
   font-weight: bold;
   font-size: 30px;
   font-size: 1.875rem;
-  margin-top: .6em;
+  margin-top: .5em;
   margin-left: .75em;
   letter-spacing: 1px;
 }
@@ -944,16 +944,22 @@ i.large {
 
 /* line 164, scss/components/_misc.scss */
 .logo {
-  margin-top: .5rem;
-  float: left;
+  margin-top: .4rem;
+}
+@media only screen and (min-width: 37.5em) {
+  /* line 164, scss/components/_misc.scss */
+  .logo {
+    margin-left: 1em;
+    float: left;
+  }
 }
 
-/* line 169, scss/components/_misc.scss */
+/* line 172, scss/components/_misc.scss */
 .i-cancel {
   color: white;
 }
 
-/* line 175, scss/components/_misc.scss */
+/* line 178, scss/components/_misc.scss */
 .site-logo:hover .i-logo, .site-logo:hover h1, .site-logo:hover .site-name,
 .site-logo:focus .i-logo,
 .site-logo:focus h1,
@@ -961,216 +967,216 @@ i.large {
   color: #312c2d;
 }
 
-/* line 182, scss/components/_misc.scss */
+/* line 185, scss/components/_misc.scss */
 .main section {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 187, scss/components/_misc.scss */
+/* line 190, scss/components/_misc.scss */
 .page-page section.intro {
   background-color: #374760;
 }
 
-/* line 193, scss/components/_misc.scss */
+/* line 196, scss/components/_misc.scss */
 .page-front .main section {
   text-align: center;
   position: relative;
   color: white;
 }
 @media only screen and (min-width: 60em) {
-  /* line 198, scss/components/_misc.scss */
+  /* line 201, scss/components/_misc.scss */
   .page-front .main section.t-right {
     text-align: right;
   }
-  /* line 201, scss/components/_misc.scss */
+  /* line 204, scss/components/_misc.scss */
   .page-front .main section.t-left {
     text-align: left;
   }
-  /* line 204, scss/components/_misc.scss */
+  /* line 207, scss/components/_misc.scss */
   .page-front .main section .case-studies {
     text-align: center;
   }
 }
-/* line 208, scss/components/_misc.scss */
+/* line 211, scss/components/_misc.scss */
 .page-front .main section h2 {
   color: white;
 }
-/* line 212, scss/components/_misc.scss */
+/* line 215, scss/components/_misc.scss */
 .page-front .intro {
   background: #374760 url("images/intro-angles.png") no-repeat center center;
   height: 762px;
 }
 @media only screen and (min-width: 60em) {
-  /* line 212, scss/components/_misc.scss */
+  /* line 215, scss/components/_misc.scss */
   .page-front .intro {
     height: 873px;
     background-size: 1700px 873px;
   }
 }
-/* line 220, scss/components/_misc.scss */
+/* line 223, scss/components/_misc.scss */
 .page-front .gpo {
   background: #3bc161 url("images/gpo-angles.png") no-repeat center center;
   background-size: 1700px;
   height: 689px;
 }
-/* line 225, scss/components/_misc.scss */
+/* line 228, scss/components/_misc.scss */
 .page-front .gpo .case-studies {
   background-color: white;
   color: #231f20;
 }
-/* line 230, scss/components/_misc.scss */
+/* line 233, scss/components/_misc.scss */
 .page-front .dropfort {
   background: #2e8fe8 url("images/dropfort-angles.png") no-repeat center center;
   height: 688px;
   background-size: 1700px;
 }
-/* line 235, scss/components/_misc.scss */
+/* line 238, scss/components/_misc.scss */
 .page-front .uottawa {
   background: #dd4460 url("images/uottawa-angles.png") no-repeat top center;
   height: 688px;
   background-size: 1700px;
 }
-/* line 240, scss/components/_misc.scss */
+/* line 243, scss/components/_misc.scss */
 .page-front .drupalcamp {
   background: #643d9b url("images/drupalcamp-angles.png") no-repeat bottom center;
   height: 688px;
   background-size: 1700px;
 }
 
-/* line 251, scss/components/_misc.scss */
+/* line 254, scss/components/_misc.scss */
 .page-about .intro {
   background: url("images/about.jpg") top center repeat-x;
   background-attachment: fixed;
 }
 
-/* line 257, scss/components/_misc.scss */
+/* line 260, scss/components/_misc.scss */
 .item-list {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
-/* line 260, scss/components/_misc.scss */
+/* line 263, scss/components/_misc.scss */
 .item-list li {
   border-bottom: 1px solid #d2d2d2;
   padding: 1em 0;
 }
-/* line 263, scss/components/_misc.scss */
+/* line 266, scss/components/_misc.scss */
 .item-list li p {
   margin: 0;
 }
-/* line 266, scss/components/_misc.scss */
+/* line 269, scss/components/_misc.scss */
 .item-list li:last-child {
   border-bottom: 0;
 }
 
-/* line 273, scss/components/_misc.scss */
+/* line 276, scss/components/_misc.scss */
 .page-blog .intro {
   background: url("images/blog.jpg") top center;
   background-attachment: fixed;
 }
 
-/* line 281, scss/components/_misc.scss */
+/* line 284, scss/components/_misc.scss */
 .main-content img {
   width: 100%;
   margin: 2em auto;
   border: 1px solid #ccc;
 }
-/* line 285, scss/components/_misc.scss */
+/* line 288, scss/components/_misc.scss */
 .main-content img.small {
   max-width: 500px;
 }
-/* line 288, scss/components/_misc.scss */
+/* line 291, scss/components/_misc.scss */
 .main-content img.no-border {
   border: 0;
 }
-/* line 291, scss/components/_misc.scss */
+/* line 294, scss/components/_misc.scss */
 .main-content img.center {
   margin: 0 auto;
   display: block;
 }
-/* line 295, scss/components/_misc.scss */
+/* line 298, scss/components/_misc.scss */
 .main-content img.add-margin {
   margin: 2em auto;
   display: block;
 }
 
-/* line 302, scss/components/_misc.scss */
+/* line 305, scss/components/_misc.scss */
 .page-gpo .intro {
   background: #3bc161 url("images/gpo-angles.png") no-repeat right center;
   background-size: cover;
 }
 
-/* line 307, scss/components/_misc.scss */
+/* line 310, scss/components/_misc.scss */
 .page-dropfort .intro {
   background: #2e8fe8 url("images/dropfort-angles.png") no-repeat center center;
   background-size: cover;
 }
 
-/* line 312, scss/components/_misc.scss */
+/* line 315, scss/components/_misc.scss */
 .page-uottawa .intro {
   background: #dd4460 url("images/uottawa-angles.png") no-repeat top center;
   background-size: cover;
 }
 
-/* line 317, scss/components/_misc.scss */
+/* line 320, scss/components/_misc.scss */
 .page-drupalcamp .intro {
   background: #643d9b url("images/drupalcamp-angles.png") no-repeat top center;
   background-size: cover;
 }
 
-/* line 322, scss/components/_misc.scss */
+/* line 325, scss/components/_misc.scss */
 .pager {
   padding: 1em;
   max-width: 1280px;
   margin: 0 auto;
 }
 
-/* line 329, scss/components/_misc.scss */
+/* line 332, scss/components/_misc.scss */
 .site-link {
   color: white;
 }
-/* line 332, scss/components/_misc.scss */
+/* line 335, scss/components/_misc.scss */
 .site-link:hover, .site-link:focus {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-/* line 341, scss/components/_misc.scss */
+/* line 344, scss/components/_misc.scss */
 .footer .button {
   display: inline-block;
   margin-top: 1.5em;
 }
 
-/* line 346, scss/components/_misc.scss */
+/* line 349, scss/components/_misc.scss */
 .footer__light {
   background-color: #393939;
   margin-top: 4em;
   padding: 1em 0 1.5em;
 }
-/* line 350, scss/components/_misc.scss */
+/* line 353, scss/components/_misc.scss */
 .footer__light span {
   display: block;
   margin-top: 1em;
 }
-/* line 354, scss/components/_misc.scss */
+/* line 357, scss/components/_misc.scss */
 .footer__light .t-copyright {
   float: none;
   text-align: center;
 }
 
-/* line 362, scss/components/_misc.scss */
+/* line 365, scss/components/_misc.scss */
 ::-moz-selection {
   color: #231f20;
   background: rgba(0, 0, 0, 0.3);
 }
 
-/* line 366, scss/components/_misc.scss */
+/* line 369, scss/components/_misc.scss */
 ::selection {
   color: #231f20;
   background: rgba(0, 0, 0, 0.3);
 }
 
-/* line 374, scss/components/_misc.scss */
+/* line 377, scss/components/_misc.scss */
 .cf:before, .pager:before,
 .cf:after,
 .pager:after {
@@ -1180,7 +1186,7 @@ i.large {
   /* 2 */
 }
 
-/* line 379, scss/components/_misc.scss */
+/* line 382, scss/components/_misc.scss */
 .cf:after, .pager:after {
   clear: both;
 }
@@ -1290,7 +1296,7 @@ i.large {
 }
 /* line 74, scss/components/_buttons.scss */
 .contact-btn:hover, .contact-btn:focus {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 /* line 81, scss/components/_buttons.scss */
@@ -1401,10 +1407,14 @@ header.is-solid nav .contact-btn:hover, header.is-solid nav .contact-btn:focus {
   /* line 73, scss/components/_states.scss */
   .header.is-solid nav a:hover, .header.is-solid nav a:focus {
     color: #231f20;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  /* line 77, scss/components/_states.scss */
+  .header.is-solid nav a.border-thin {
+    border: 1px solid rgba(0, 0, 0, 0.2);
   }
 
-  /* line 80, scss/components/_states.scss */
+  /* line 83, scss/components/_states.scss */
   .is-solid.header {
     background-color: white;
     -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 0 10px;
@@ -1415,7 +1425,7 @@ header.is-solid nav .contact-btn:hover, header.is-solid nav .contact-btn:focus {
 /**
  * Animated graph
  */
-/* line 91, scss/components/_states.scss */
+/* line 94, scss/components/_states.scss */
 .circle-wrap {
   margin: 1em auto 4em;
   width: 300px;
@@ -1424,7 +1434,7 @@ header.is-solid nav .contact-btn:hover, header.is-solid nav .contact-btn:focus {
   border-radius: 50%;
 }
 
-/* line 100, scss/components/_states.scss */
+/* line 103, scss/components/_states.scss */
 .circle-wrap .circle .mask,
 .circle-wrap .circle .fill {
   width: 300px;
@@ -1433,18 +1443,18 @@ header.is-solid nav .contact-btn:hover, header.is-solid nav .contact-btn:focus {
   border-radius: 50%;
 }
 
-/* line 107, scss/components/_states.scss */
+/* line 110, scss/components/_states.scss */
 .circle-wrap .circle .mask {
   clip: rect(0px, 300px, 300px, 150px);
 }
 
-/* line 111, scss/components/_states.scss */
+/* line 114, scss/components/_states.scss */
 .circle-wrap .circle .mask .fill {
   clip: rect(0px, 150px, 300px, 0px);
   background-color: #dd4460;
 }
 
-/* line 117, scss/components/_states.scss */
+/* line 120, scss/components/_states.scss */
 .run .circle .mask.full,
 .run .circle .fill {
   animation: fill ease-in-out 2s;
@@ -1452,18 +1462,18 @@ header.is-solid nav .contact-btn:hover, header.is-solid nav .contact-btn:focus {
 }
 
 @keyframes fill {
-  /* line 123, scss/components/_states.scss */
+  /* line 126, scss/components/_states.scss */
   0% {
     transform: rotate(0deg);
   }
 
-  /* line 126, scss/components/_states.scss */
+  /* line 129, scss/components/_states.scss */
   100% {
     transform: rotate(180deg);
   }
 }
 
-/* line 131, scss/components/_states.scss */
+/* line 134, scss/components/_states.scss */
 .circle-wrap .inside-circle {
   width: 250px;
   height: 250px;

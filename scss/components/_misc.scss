@@ -76,7 +76,7 @@ img {
       display: none;
       font-weight: bold;
       @include rem-fallback(font-size, 1.875); // 30px
-      margin-top: .6em;
+      margin-top: .5em;
       margin-left: .75em;
       letter-spacing: 1px;
     }
@@ -162,8 +162,11 @@ i.large{
 }
 
 .logo{
-  margin-top: .5rem;
-  float: left;
+  margin-top: .4rem;
+  @media #{$tablet} {
+    margin-left: 1em;
+    float: left;
+  }
 }
 
 .i-cancel{
