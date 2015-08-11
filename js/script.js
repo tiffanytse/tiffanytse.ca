@@ -1,6 +1,5 @@
 $(document).ready(function() {
 
-    console.log('tset');
     // Add Close Button
     $('.contact .wrapper').append('<a class="btn-close button circle light"><i class="i-cancel"></i><span class="element-invisible">Close</span></a>');
     
@@ -46,14 +45,15 @@ $(document).ready(function() {
     });
 
     // Waypoints
-
-    var waypoint = new Waypoint({
-      element: document.getElementById('wp'),
-      handler: function(direction) {
-        $('.circle-wrap').addClass('run');
-      },
-      offset: 600
-    });
+    if($('.circle-wrap').length >0 ){
+      var waypoint = new Waypoint({
+        element: document.getElementById('wp'),
+        handler: function(direction) {
+          $('.circle-wrap').addClass('run'); 
+        },
+        offset: 600
+      });
+    }
 
     // Smooth Scroll
     $('a[href^="#"]').on('click', function(event) {
