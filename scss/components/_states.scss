@@ -60,7 +60,9 @@
 @media #{$tablet-landscape} { 
   .header.is-solid {
     .site-logo{
-      opacity: 1;
+      .logo{
+        opacity: .85;
+      }
       h1, .site-name{
         display: inline-block;
       }

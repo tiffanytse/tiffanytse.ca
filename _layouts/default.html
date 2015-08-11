@@ -27,9 +27,9 @@
             <a href="{{ site.baseurl }}/"></a>
 
             <div class="header__site-info">
-              {% if page.url == "/index.html" %}<a class="site-logo" href="{{ site.baseurl }}/"><i class="i-logo"></i><h1>{{ site.name }}</h1></a>{% endif %}
+              {% if page.url == "/index.html" %}<a class="site-logo" href="{{ site.baseurl }}/"><img class="logo" src="{{ site.baseurl }}/images/logo.svg"><h1>{{ site.name }}</h1></a>{% endif %}
               <!-- Only make an H1 on the home page, otherwise let the page name be the h1 -->
-              {% if page.url != "/index.html" %}<a class="site-logo" href="{{ site.baseurl }}/"><i class="i-logo"></i><span class="site-name">{{ site.name }}</span></a>{% endif %}
+              {% if page.url != "/index.html" %}<a class="site-logo" href="{{ site.baseurl }}/"><img  class="logo" src="{{ site.baseurl }}/images/logo.svg"><span class="site-name">{{ site.name }}</span></a>{% endif %}
             </div>
 
             <nav>

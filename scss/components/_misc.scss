@@ -109,19 +109,21 @@ img {
     }
     .contact-btn:hover, 
     .contact-btn:focus{
-      border-bottom: 1px solid $white;
+      border-bottom: 1px solid rgba(255,255,255, 0.4);
       background-color: rgba(255,255,255, 0.1);
     }
   }
 }
 
 .border-thin{
-  border: 1px solid #d2d2d2;
+  border: 1px solid rgba(255,255,255, 0.4);
   @include border-radius(3px);
 }
 
 .site-logo{
-  opacity: .75;
+  .logo{
+    opacity: .6;
+  } 
   &:hover, 
   &:focus{
     border-bottom: none;
@@ -159,21 +161,9 @@ i.large{
   @include rem-fallback(font-size, 2.5); // 40px
 }
 
-.i-logo{
-  @include rem-fallback(font-size, 3.5); // 56px
-  color: #231f20;
-  background-color: #fff;
-  height: 35px;
-  width: 35px;
-  display: inline-block;
-  margin: 1rem;
-  position: relative;
-  &:before{
-    position: absolute;
-    top: -10px;
-    left: -10px;
-    margin: 0;
-  }
+.logo{
+  margin-top: .5rem;
+  float: left;
 }
 
 .i-cancel{
