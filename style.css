@@ -422,15 +422,22 @@ strong {
   /* line 46, scss/components/_layout.scss */
   .main section.intro {
     padding-top: 22.5em;
+    margin-top: -3.5em;
+  }
+}
+@media only screen and (min-width: 66em) {
+  /* line 46, scss/components/_layout.scss */
+  .main section.intro {
+    margin-top: -5.5em;
   }
 }
 
-/* line 56, scss/components/_layout.scss */
+/* line 60, scss/components/_layout.scss */
 .page-front .gpo {
   position: relative;
   padding-top: 13em;
 }
-/* line 59, scss/components/_layout.scss */
+/* line 63, scss/components/_layout.scss */
 .page-front .gpo .case-studies {
   position: absolute;
   top: 0;
@@ -441,22 +448,22 @@ strong {
   padding: 1em;
 }
 
-/* line 71, scss/components/_layout.scss */
+/* line 75, scss/components/_layout.scss */
 .picture {
   margin-top: 4em;
 }
 
-/* line 75, scss/components/_layout.scss */
+/* line 79, scss/components/_layout.scss */
 .uottawa .picture {
   margin-top: 5em;
 }
 
 @media only screen and (min-width: 60em) {
-  /* line 81, scss/components/_layout.scss */
+  /* line 85, scss/components/_layout.scss */
   .page-front .wrapper {
     max-width: 1280px;
   }
-  /* line 85, scss/components/_layout.scss */
+  /* line 89, scss/components/_layout.scss */
   .page-front .intro .content {
     float: right;
     width: 41.66667%;
@@ -464,13 +471,13 @@ strong {
     margin-left: -50%;
     text-align: left;
   }
-  /* line 88, scss/components/_layout.scss */
+  /* line 92, scss/components/_layout.scss */
   .page-front .intro .content .mega {
     text-transform: uppercase;
     font-size: 70px;
     font-size: 4.375rem;
   }
-  /* line 93, scss/components/_layout.scss */
+  /* line 97, scss/components/_layout.scss */
   .page-front .intro .picture {
     float: left;
     width: 41.66667%;
@@ -479,7 +486,7 @@ strong {
     position: relative;
     bottom: 0;
   }
-  /* line 101, scss/components/_layout.scss */
+  /* line 105, scss/components/_layout.scss */
   .page-front .t-left .content {
     float: left;
     width: 41.66667%;
@@ -487,7 +494,7 @@ strong {
     margin-right: -50%;
     margin-top: 12em;
   }
-  /* line 107, scss/components/_layout.scss */
+  /* line 111, scss/components/_layout.scss */
   .page-front .t-right .content {
     float: right;
     width: 41.66667%;
@@ -495,7 +502,7 @@ strong {
     margin-left: -50%;
     margin-top: 4.5em;
   }
-  /* line 112, scss/components/_layout.scss */
+  /* line 116, scss/components/_layout.scss */
   .page-front .gpo .picture {
     float: right;
     width: 41.66667%;
@@ -503,7 +510,7 @@ strong {
     margin-left: -41.66667%;
     margin-top: -2.5em;
   }
-  /* line 117, scss/components/_layout.scss */
+  /* line 121, scss/components/_layout.scss */
   .page-front .dropfort .picture {
     float: right;
     width: 100%;
@@ -511,7 +518,7 @@ strong {
     margin-left: -141.66667%;
     margin-top: 4em;
   }
-  /* line 122, scss/components/_layout.scss */
+  /* line 126, scss/components/_layout.scss */
   .page-front .uottawa .picture {
     float: left;
     width: 83.33333%;
@@ -520,7 +527,7 @@ strong {
     position: absolute;
     bottom: -1em;
   }
-  /* line 128, scss/components/_layout.scss */
+  /* line 132, scss/components/_layout.scss */
   .page-front .drupalcamp .picture {
     float: right;
     width: 100%;
@@ -529,7 +536,7 @@ strong {
   }
 }
 @media only screen and (min-width: 100em) {
-  /* line 136, scss/components/_layout.scss */
+  /* line 140, scss/components/_layout.scss */
   .page-front .uottawa .picture {
     float: left;
     width: 83.33333%;
@@ -541,18 +548,18 @@ strong {
  * Layout
  */
 @media only screen and (min-width: 37.5em) {
-  /* line 148, scss/components/_layout.scss */
+  /* line 152, scss/components/_layout.scss */
   .l-left {
     float: left;
   }
 
-  /* line 152, scss/components/_layout.scss */
+  /* line 156, scss/components/_layout.scss */
   .l-right {
     float: right;
   }
 }
 @media only screen and (min-width: 37.5em) {
-  /* line 160, scss/components/_layout.scss */
+  /* line 164, scss/components/_layout.scss */
   .main-content .img-left {
     float: left;
     width: 50%;
@@ -560,7 +567,7 @@ strong {
     margin-right: -50%;
     margin-left: -2.5%;
   }
-  /* line 165, scss/components/_layout.scss */
+  /* line 169, scss/components/_layout.scss */
   .main-content .img-right {
     float: left;
     width: 50%;
@@ -569,40 +576,40 @@ strong {
     margin-left: 52.333%;
   }
 }
-/* line 173, scss/components/_layout.scss */
+/* line 177, scss/components/_layout.scss */
 .margin {
   margin: 2em 0;
 }
 
-/* line 181, scss/components/_layout.scss */
+/* line 185, scss/components/_layout.scss */
 .wrapper {
   margin: 0 auto;
   padding: 0 1.5em;
 }
 
-/* line 191, scss/components/_layout.scss */
+/* line 195, scss/components/_layout.scss */
 .contact {
   position: relative;
   padding-top: 1.5em;
   padding-bottom: 1.5em;
 }
-/* line 195, scss/components/_layout.scss */
+/* line 199, scss/components/_layout.scss */
 .contact h2 {
   padding-right: 1em;
 }
-/* line 198, scss/components/_layout.scss */
+/* line 202, scss/components/_layout.scss */
 .contact .button {
   position: absolute;
   top: 1.5em;
   right: 1.5em;
 }
-/* line 204, scss/components/_layout.scss */
+/* line 208, scss/components/_layout.scss */
 .contact .i-mail:before {
   margin: 0;
   padding: 0;
 }
 
-/* line 210, scss/components/_layout.scss */
+/* line 214, scss/components/_layout.scss */
 .main .main-content {
   margin: 0 auto;
   padding: 2em 1.5em 4em;
@@ -610,12 +617,12 @@ strong {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 218, scss/components/_layout.scss */
+/* line 222, scss/components/_layout.scss */
 .page-blog .main .main-content, .page-about .main .main-content {
   max-width: 45em;
 }
 
-/* line 228, scss/components/_layout.scss */
+/* line 232, scss/components/_layout.scss */
 .page-uottawa .main-content .wrapper,
 .page-drupalcamp .main-content .wrapper,
 .page-dropfort .main-content .wrapper,
@@ -624,7 +631,7 @@ strong {
   max-width: 1000px;
   padding: 0;
 }
-/* line 231, scss/components/_layout.scss */
+/* line 235, scss/components/_layout.scss */
 .page-uottawa .main-content .wrapper p,
 .page-drupalcamp .main-content .wrapper p,
 .page-dropfort .main-content .wrapper p,
@@ -633,7 +640,7 @@ strong {
   max-width: 45em;
   margin: 0 auto;
 }
-/* line 235, scss/components/_layout.scss */
+/* line 239, scss/components/_layout.scss */
 .page-uottawa .main-content .wrapper h2,
 .page-drupalcamp .main-content .wrapper h2,
 .page-dropfort .main-content .wrapper h2,
@@ -642,24 +649,24 @@ strong {
   text-align: center;
 }
 
-/* line 241, scss/components/_layout.scss */
+/* line 245, scss/components/_layout.scss */
 .posts > .post {
   padding-bottom: 2em;
   border-bottom: 1px solid #d2d2d2;
 }
 
-/* line 246, scss/components/_layout.scss */
+/* line 250, scss/components/_layout.scss */
 .posts > .post:first-child {
   border-top: 1px solid #d2d2d2;
 }
 
-/* line 250, scss/components/_layout.scss */
+/* line 254, scss/components/_layout.scss */
 .posts > .post:last-child {
   padding-bottom: 1em;
   border-bottom: none;
 }
 
-/* line 256, scss/components/_layout.scss */
+/* line 260, scss/components/_layout.scss */
 .post blockquote {
   margin: 1.8em .8em;
   border-left: 2px solid #444444;
@@ -669,37 +676,37 @@ strong {
   font-style: italic;
 }
 
-/* line 266, scss/components/_layout.scss */
+/* line 270, scss/components/_layout.scss */
 #case-studies {
   position: relative;
 }
 
-/* line 269, scss/components/_layout.scss */
+/* line 273, scss/components/_layout.scss */
 #anchor {
   position: absolute;
   top: 0;
 }
 @media only screen and (min-width: 37.5em) {
-  /* line 269, scss/components/_layout.scss */
+  /* line 273, scss/components/_layout.scss */
   #anchor {
     top: -107px;
   }
 }
 
-/* line 277, scss/components/_layout.scss */
+/* line 281, scss/components/_layout.scss */
 footer {
   padding: 3em 0 0;
 }
 
 @media only screen and (min-width: 37.5em) {
-  /* line 283, scss/components/_layout.scss */
+  /* line 287, scss/components/_layout.scss */
   .header .wrapper,
   .footer__light .wrapper {
     max-width: 1280px;
     padding: 0 1em;
   }
 
-  /* line 289, scss/components/_layout.scss */
+  /* line 293, scss/components/_layout.scss */
   .header__site-info {
     float: left;
     width: 33.33333%;
@@ -708,7 +715,7 @@ footer {
     text-align: left;
   }
 
-  /* line 293, scss/components/_layout.scss */
+  /* line 297, scss/components/_layout.scss */
   .header nav {
     float: right;
     width: 66.66667%;
@@ -717,22 +724,22 @@ footer {
     text-align: right;
   }
 
-  /* line 299, scss/components/_layout.scss */
+  /* line 303, scss/components/_layout.scss */
   .footer__light .t-copyright.l-left {
     float: left;
     text-align: left;
   }
-  /* line 303, scss/components/_layout.scss */
+  /* line 307, scss/components/_layout.scss */
   .footer__light .t-copyright.l-right {
     float: right;
     text-align: right;
     padding-top: 2.4em;
   }
-  /* line 308, scss/components/_layout.scss */
+  /* line 312, scss/components/_layout.scss */
   .footer__light .t-copyright .site-logo {
     float: left;
   }
-  /* line 311, scss/components/_layout.scss */
+  /* line 315, scss/components/_layout.scss */
   .footer__light .t-copyright span {
     display: inline-block;
     margin-top: 2.4em;
@@ -1047,7 +1054,7 @@ i.large {
 
 /* line 261, scss/components/_misc.scss */
 .page-about .intro {
-  background: url("images/about.jpg") top center;
+  background: url("images/about.jpg") top center repeat-x;
   background-attachment: fixed;
 }
 

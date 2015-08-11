@@ -48,6 +48,10 @@ $zen-auto-include-item-base: false;
     margin-top: -10.5em;
     @media #{$tablet-landscape} {
       padding-top: 22.5em;
+      margin-top: -3.5em;
+    }
+    @media only screen and (min-width: 66em) {
+      margin-top: -5.5em;
     }
   }
 }
